@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_height_of_item_table_list"
+    android:orientation="horizontal"
+    android:weightSum="20">
+
+    <TextView
+        android:id="@+id/tvPaymentDetailItemstt"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@drawable/rounded_item_list"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tvPaymentDetailItemFromDate"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3.5"
+        android:background="@drawable/rounded_item_list"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tvPaymentDetailItemToDate"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3.5"
+        android:background="@drawable/rounded_item_list"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tvPaymentDetailItemBill"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3.5"
+        android:background="@drawable/rounded_item_list"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tvPaymentDetailItemDiscount"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@drawable/rounded_item_list"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tvPaymentDetailItemTotal"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3.5"
+        android:background="@drawable/rounded_item_list"
+        android:gravity="center" />
+
+    <CheckBox
+        android:id="@+id/cbPaymentDetailItem"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@drawable/rounded_item_list"
+        android:gravity="center" />
+</LinearLayout>

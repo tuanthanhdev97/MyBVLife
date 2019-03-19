@@ -1,0 +1,404 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true">
+
+    <TextView
+        android:id="@+id/tvHeaderManageAccount"
+        style="@style/style_title_header_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/dimen_margin_header_with_form"
+        android:text="@string/txt_manage_account_header" />
+
+    <RelativeLayout
+        android:id="@+id/rlManageAccountInforSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvHeaderManageAccount"
+        android:background="@drawable/rounded_10dp"
+        android:paddingBottom="@dimen/dimen_padding_bottom_form">
+
+        <!-- Title infor search -->
+
+        <RelativeLayout
+            android:id="@+id/rlTitleManageAccount"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_login_height_form_login_title_login"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/rounded_10dp_title_login"
+            android:paddingLeft="@dimen/dimen_padding_left_right_component_form">
+
+            <TextView
+                style="@style/style_title_form"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/txt_manage_account_title_search_infor" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlTitleManageAccount"
+            android:padding="@dimen/dimen_padding_left_right_component_form">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!-- Username -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_margin_title_with_edittext"
+                    android:text="@string/txt_manage_account_username" />
+
+                <EditText
+                    android:id="@+id/edtManageAccountUsername"
+                    style="@style/style_text_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_login_height_edittext"
+                    android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext"
+                    android:background="@drawable/rounded_editext"
+                    android:singleLine="true"
+                     />
+
+                <!-- Name -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_margin_title_with_edittext"
+                    android:text="@string/txt_manage_account_name" />
+
+                <EditText
+                    android:id="@+id/edtManageAccountName"
+                    style="@style/style_text_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_login_height_edittext"
+                    android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext"
+                    android:background="@drawable/rounded_editext"
+                    android:singleLine="true"
+                     />
+
+                <!-- Email -->
+
+                <LinearLayout
+                    android:id="@+id/lnManageAccountEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_margin_title_with_edittext"
+                        android:text="@string/txt_manage_account_email" />
+
+                    <EditText
+                        android:id="@+id/edtManageAccountEmail"
+                        style="@style/style_text_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_login_height_edittext"
+                        android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext"
+                        android:background="@drawable/rounded_editext"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/edt_size_login" />
+                </LinearLayout>
+
+                <!-- mobile number -->
+
+                <LinearLayout
+                    android:id="@+id/lnManageAccountPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_margin_title_with_edittext"
+                        android:text="@string/txt_manage_account_phone_number" />
+
+                    <EditText
+                        android:id="@+id/edtManageAccountPhone"
+                        style="@style/style_text_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_login_height_edittext"
+                        android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext"
+                        android:background="@drawable/rounded_editext"
+                        android:inputType="text|phone"
+                        android:singleLine="true"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/edt_size_login" />
+                </LinearLayout>
+
+                <!-- Status of user -->
+                <LinearLayout
+                    android:id="@+id/lnManageAccountStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_margin_title_with_edittext"
+                        android:text="@string/txt_manage_account_status" />
+
+                    <Spinner
+                        android:id="@+id/spManageAccountStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_login_height_edittext"
+                        android:overlapAnchor="false"
+                        android:background="@drawable/custom_drop_down"
+                        android:spinnerMode="dropdown" />
+                </LinearLayout>
+
+
+                <!-- Type account -->
+                <LinearLayout
+                    android:id="@+id/lnManageAccountType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_margin_title_with_edittext"
+                        android:text="@string/txt_manage_account_type" />
+
+                    <Spinner
+                        android:id="@+id/spManageAccountType"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_login_height_edittext"
+                        android:overlapAnchor="false"
+                        android:background="@drawable/custom_drop_down"
+                        android:spinnerMode="dropdown" />
+                </LinearLayout>
+
+
+                <!-- From Date -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_margin_title_with_edittext"
+                    android:text="@string/txt_manage_account_from_date" />
+
+                <EditText
+                    android:id="@+id/edtManageAccountFromDate"
+                    style="@style/style_text_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_login_height_edittext"
+                    android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext"
+                    android:background="@drawable/rounded_editext"
+                    android:focusable="false"
+                    android:hint="@string/txt_hint_date"
+                    android:inputType="date"
+                    android:singleLine="true"
+                    android:textColor="@color/blue"
+                    android:textColorHint="@color/color_hint"
+                    android:textSize="@dimen/edt_size_login" />
+
+                <!-- To Date -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_margin_title_with_edittext"
+                    android:text="@string/txt_manage_account_to_date" />
+
+                <EditText
+                    android:id="@+id/edtManageAccountToDate"
+                    style="@style/style_text_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_login_height_edittext"
+                    android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext"
+                    android:background="@drawable/rounded_editext"
+                    android:focusable="false"
+                    android:hint="@string/txt_hint_date"
+                    android:inputType="date"
+                    android:singleLine="true"
+                    android:textColor="@color/blue"
+                    android:textColorHint="@color/color_hint"
+                    android:textSize="@dimen/edt_size_login" />
+
+
+                <!-- Contract Number Group -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_margin_title_with_edittext"
+                    android:text="@string/txt_manage_account_contract_number_group" />
+
+                <EditText
+                    android:id="@+id/edtManageAccountContractNoGroup"
+                    style="@style/style_text_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_login_height_edittext"
+                    android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext"
+                    android:background="@drawable/rounded_editext"
+                    android:hint="@string/txt_manage_account_hint_contract_number"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColor="@color/blue"
+                    android:textColorHint="@color/color_hint"
+                    android:textSize="@dimen/edt_size_login" />
+
+                <!-- Contract Number Invidual -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_margin_title_with_edittext"
+                    android:text="@string/txt_manage_account_contract_number_invidual" />
+
+                <EditText
+                    android:id="@+id/edtManageAccountContractNoInvidual"
+                    style="@style/style_text_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_login_height_edittext"
+                    android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext"
+                    android:background="@drawable/rounded_editext"
+                    android:hint="@string/txt_manage_account_hint_contract_number"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColor="@color/blue"
+                    android:textColorHint="@color/color_hint"
+                    android:textSize="@dimen/edt_size_login" />
+
+                <!-- type of identify -->
+                <LinearLayout
+                    android:id="@+id/lnManageAccountTypeIdentify"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_margin_title_with_edittext"
+                        android:text="@string/txt_manage_account_type_identification" />
+
+                    <Spinner
+                        android:id="@+id/spManageAccountTypeIdentify"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_login_height_edittext"
+                        android:overlapAnchor="false"
+                        android:background="@drawable/custom_drop_down"
+                        android:spinnerMode="dropdown" />
+                </LinearLayout>
+
+
+                <!-- Number Identify -->
+                <LinearLayout
+                    android:id="@+id/lnManageAccountNumberIdentify"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_margin_title_with_edittext"
+                        android:text="@string/txt_manage_account_number_identification" />
+
+                    <EditText
+                        android:id="@+id/edtManageAccountNumberIdentify"
+                        style="@style/style_text_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_login_height_edittext"
+                        android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext"
+                        android:background="@drawable/rounded_editext"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/edt_size_login" />
+                </LinearLayout>
+
+                <Button android:textAllCaps="false"
+                    android:id="@+id/btnCollapse"
+                    style="@style/small_text_size_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_height_button_expand"
+                    android:background="@drawable/rounded_5dp_collapse"
+                    android:drawableLeft="@drawable/ic_bullet_toggle_plus"
+                    android:text="@string/txt_manage_account_expand" />
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/lnCollapse"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:clickable="true"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:onClick="onClickCollapse"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<ImageView-->
+                <!--android:id="@+id/imgvManageAccountExpandCollapse"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:src="@drawable/ic_bullet_toggle_minus" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/tvManageAccountCollapse"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/txt_manage_account_collapse" />-->
+                <!--</LinearLayout>-->
+
+                <Button android:textAllCaps="false"
+                    android:id="@+id/btnManageAccountSearch"
+                    style="@style/text_style_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_login_height_edittext"
+                    android:layout_marginBottom="@dimen/dimen_margin_error_with_title"
+                    android:layout_marginTop="@dimen/dimen_margin_button_with_last_input"
+                    android:background="@drawable/rounded_10dp_btn_login"
+                    android:drawableLeft="@mipmap/icon_search"
+                    android:drawablePadding="@dimen/dimen_login_padding_left"
+                    android:paddingLeft="@dimen/dimen_login_padding_left"
+                    android:paddingRight="@dimen/dimen_login_padding_left"
+                    android:text="@string/txt_manage_account_search_button" />
+                <!-- Note -->
+
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlManageAccountInforSearch"
+        android:layout_marginTop="@dimen/layout_padding_default"
+        android:background="@drawable/rounded_10dp"
+        android:paddingBottom="@dimen/dimen_padding_bottom_form">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_manage_account_title_list_account" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/layout_padding_default"
+    android:paddingLeft="@dimen/dimen_padding_right_value_item_exlist_tablet"
+    android:paddingRight="@dimen/dimen_padding_right_value_item_exlist_tablet"
+    android:paddingTop="@dimen/layout_padding_default">
+
+    <TextView
+        style="@style/style_header_item_expandable_title_tablet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="@string/txt_contract_tab_account_value_insured_person" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/style_header_item_expandable_title_tablet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="@dimen/dimen_padding_left_group_exlist"
+            android:text="@string/txt_contract_tab_account_value_insured_person_value" />
+
+        <TextView
+            android:id="@+id/tvContractTabAccountValueInsuredPerson"
+            style="@style/style_header_item_expandable_content_tablet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/style_header_item_expandable_title_tablet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="@dimen/dimen_padding_left_group_exlist"
+            android:text="@string/txt_contract_tab_account_value_insured_person_rate" />
+
+        <TextView
+            android:id="@+id/tvContractTabAccountValueInsuredPersonRate"
+            style="@style/style_header_item_expandable_content_tablet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        style="@style/style_header_item_expandable_title_tablet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="@string/txt_contract_tab_account_value_buyer" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/style_header_item_expandable_title_tablet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="@dimen/dimen_padding_left_group_exlist"
+            android:text="@string/txt_contract_tab_account_value_buyer_value" />
+
+        <TextView
+            android:id="@+id/tvContractTabAccountValueBuyerValue"
+            style="@style/style_header_item_expandable_content_tablet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/style_header_item_expandable_title_tablet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="@dimen/dimen_padding_left_group_exlist"
+            android:text="@string/txt_contract_tab_account_value_buyer_rate" />
+
+        <TextView
+            android:id="@+id/tvContractTabAccountValueBuyerRate"
+            style="@style/style_header_item_expandable_content_tablet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/style_header_item_expandable_title_tablet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/txt_contract_tab_account_value_summary" />
+
+        <TextView
+            android:id="@+id/tvContractTabAccountValueSummary"
+            style="@style/style_header_item_expandable_content_tablet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tvContactTabValueAccountItemTypeDevice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_contract_type_phone"
+        android:visibility="gone" />
+</LinearLayout>

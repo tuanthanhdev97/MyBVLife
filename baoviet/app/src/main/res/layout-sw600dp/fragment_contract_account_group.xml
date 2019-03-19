@@ -1,0 +1,280 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true">
+
+    <RelativeLayout
+        android:id="@+id/rlGroupHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/dimen_margin_header_with_form">
+
+        <TextView
+            android:id="@+id/tvGroupTitleHeaderForm"
+            style="@style/style_title_header_form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/txt_contract_account_group_header" />
+
+        <LinearLayout
+            android:id="@+id/lnGroupContractNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_contract_account_group_number_contract" />
+
+            <Spinner android:overlapAnchor="false"
+                android:id="@+id/spGroupContracNumber"
+                android:layout_width="@dimen/dimen_width_spinner_contract_number_group"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_drop_down"
+                android:spinnerMode="dropdown"></Spinner>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvGroupLastTimeUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlGroupHeader"
+        android:layout_marginBottom="@dimen/dimen_margin_header_with_form" />
+
+    <RelativeLayout
+        android:id="@+id/rlGroupInforContract"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvGroupLastTimeUpdate"
+        android:background="@drawable/rounded_10dp">
+
+        <!-- Title infor detail -->
+
+        <RelativeLayout
+            android:id="@+id/rlGroupTitleInforContract"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_login_height_form_login_title_login"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/rounded_10dp_title_login"
+            android:paddingLeft="@dimen/dimen_padding_left_right_component_form">
+
+            <TextView
+                style="@style/style_title_form_tablet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/txt_contract_account_group_infor_contract_title" />
+
+            <ImageView
+                android:id="@+id/imgGroupExpandInforContract"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_bullet_toggle_minus" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlGroupExpandInforContract"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlGroupTitleInforContract"
+            android:padding="@dimen/dimen_padding_left_right_component_form">
+
+            <LinearLayout
+                android:id="@+id/lnGroupInforContractDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!-- release date -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                        android:layout_weight="1"
+                        android:text="@string/txt_contract_account_group_release_date" />
+
+                    <EditText
+                        android:id="@+id/edtGroupReleaseDate"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                        android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                        android:layout_weight="2"
+                        android:background="@drawable/rounded_editext"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:textColor="@color/blue"
+                        android:singleLine="true"
+                        android:textSize="@dimen/edt_size_login" />
+                </LinearLayout>
+
+                <!-- effective date -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                        android:layout_weight="1"
+                        android:text="@string/txt_contract_account_group_effective_date" />
+
+                    <EditText
+                        android:id="@+id/edtGroupEffectiveDate"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                        android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                        android:layout_weight="2"
+                        android:background="@drawable/rounded_editext"
+                        android:editable="false"
+                        android:textColor="@color/blue"
+                        android:singleLine="true"
+                        android:textSize="@dimen/edt_size_login" />
+                </LinearLayout>
+
+
+                <!-- product -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/tvGroupProductName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                        android:layout_weight="1"
+                        android:text="@string/txt_contract_account_group_product" />
+
+                    <EditText
+                        android:id="@+id/edtGroupProduct"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                        android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                        android:layout_weight="2"
+                        android:background="@drawable/rounded_editext"
+                        android:editable="false"
+                        android:textColor="@color/blue"
+                        android:singleLine="true"
+                        android:textSize="@dimen/edt_size_login" />
+                </LinearLayout>
+
+                <!-- type -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                        android:layout_weight="1"
+                        android:text="@string/txt_contract_account_group_type" />
+
+                    <EditText
+                        android:id="@+id/edtGroupType"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                        android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                        android:layout_weight="2"
+                        android:background="@drawable/rounded_editext"
+                        android:editable="false"
+                        android:textColor="@color/blue"
+                        android:singleLine="true"
+                        android:textSize="@dimen/edt_size_login" />
+                </LinearLayout>
+
+
+                <!-- status -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                        android:layout_weight="1"
+                        android:text="@string/txt_contract_account_group_status" />
+
+                    <EditText
+                        android:id="@+id/edtGroupStatus"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                        android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                        android:layout_weight="2"
+                        android:background="@drawable/rounded_editext"
+                        android:editable="false"
+                        android:textColor="@color/blue"
+                        android:singleLine="true"
+                        android:textSize="@dimen/edt_size_login" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--<TextView-->
+            <!--android:id="@+id/tvGroupNoData"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/lnGroupInforContractDetail"-->
+            <!--android:textColor="@android:color/holo_red_light"-->
+            <!--android:visibility="gone" />-->
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlGroupInforContract"
+        android:layout_marginTop="@dimen/dimen_margin_top_tab_group"
+        android:background="@drawable/rounded_10dp">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_action_bar"
+            android:elevation="6dp"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:tabGravity="fill"
+            app:tabMode="scrollable" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPagerGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tab_layout_group" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/layout_padding_default"
+    android:paddingLeft="@dimen/dimen_padding_right_value_item_exlist"
+    android:paddingRight="@dimen/dimen_padding_right_value_item_exlist"
+    android:paddingTop="@dimen/layout_padding_default">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/style_header_item_expandable_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/txt_contract_tab_customer_infor_beneficiary_rate" />
+
+        <TextView
+            android:id="@+id/tvContractTabBeneficiaryRate"
+            style="@style/style_header_item_expandable_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/style_header_item_expandable_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/txt_contract_tab_customer_infor_beneficiary_relate" />
+
+        <TextView
+            android:id="@+id/tvContractTabBeneficiaryRelate"
+            style="@style/style_header_item_expandable_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            style="@style/style_header_item_expandable_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="start"
+            android:text="@string/txt_contract_tab_customer_infor_beneficiary_address" />
+
+        <TextView
+            android:id="@+id/tvContractTabBeneficiaryAddress"
+            style="@style/style_header_item_expandable_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:gravity="end" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/style_header_item_expandable_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/txt_contract_tab_customer_infor_beneficiary_email" />
+
+        <TextView
+            android:id="@+id/tvContractTabBeneficiaryEmail"
+            style="@style/style_header_item_expandable_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        style="@style/style_header_item_expandable_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_contract_tab_customer_infor_beneficiary_phone" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/style_header_item_expandable_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="@dimen/dimen_padding_left_group_exlist"
+            android:text="@string/txt_contract_tab_customer_infor_beneficiary_mobilephone" />
+
+        <TextView
+            android:id="@+id/tvContractTabBeneficiaryMobilePhone"
+            style="@style/style_header_item_expandable_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/style_header_item_expandable_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="@dimen/dimen_padding_left_group_exlist"
+            android:text="@string/txt_contract_tab_customer_infor_beneficiary_companyphone" />
+
+        <TextView
+            android:id="@+id/tvContractTabBeneficiaryCompanyPhone"
+            style="@style/style_header_item_expandable_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/style_header_item_expandable_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="@dimen/dimen_padding_left_group_exlist"
+            android:text="@string/txt_contract_tab_customer_infor_beneficiary_homephone" />
+
+        <TextView
+            android:id="@+id/tvContractTabBeneficiaryHomePhone"
+            style="@style/style_header_item_expandable_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        style="@style/style_header_item_expandable_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_contract_tab_customer_infor_beneficiary_identification" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/style_header_item_expandable_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="@dimen/dimen_padding_left_group_exlist"
+            android:text="@string/txt_contract_tab_customer_infor_beneficiary_type_identification" />
+
+        <TextView
+            android:id="@+id/tvContractTabBeneficiaryTypeId"
+            style="@style/style_header_item_expandable_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/style_header_item_expandable_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="@dimen/dimen_padding_left_group_exlist"
+            android:text="@string/txt_contract_tab_customer_infor_beneficiary_number_identification" />
+
+        <TextView
+            android:id="@+id/tvContractTabBeneficiaryNumberId"
+            style="@style/style_header_item_expandable_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/style_header_item_expandable_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="@dimen/dimen_padding_left_group_exlist"
+            android:text="@string/txt_contract_tab_customer_infor_beneficiary_date_identification" />
+
+        <TextView
+            android:id="@+id/tvContractTabBeneficiaryDateId"
+            style="@style/style_header_item_expandable_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/style_header_item_expandable_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="@dimen/dimen_padding_left_group_exlist"
+            android:text="@string/txt_contract_tab_customer_infor_beneficiary_address_identification" />
+
+        <TextView
+            android:id="@+id/tvContractTabBeneficiaryAddressId"
+            style="@style/style_header_item_expandable_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/style_header_item_expandable_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/txt_contract_tab_customer_infor_beneficiary_tax_code" />
+
+        <TextView
+            android:id="@+id/tvContractTabBeneficiaryTaxCode"
+            style="@style/style_header_item_expandable_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/style_header_item_expandable_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/txt_contract_tab_customer_infor_beneficiary_product" />
+
+        <TextView
+            android:id="@+id/tvContractTabBeneficiaryProduct"
+            style="@style/style_header_item_expandable_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvContactTabBeneficiaryItemTypeDevice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_contract_type_phone"
+        android:visibility="gone" />
+</LinearLayout>

@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_header_section"
+        android:background="@drawable/rounded_title_form"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_margin_right_icon_header_section"
+            android:src="@mipmap/ic_value_account_title" />
+
+        <TextView
+            android:id="@+id/tvContractTabAccountValueTitle"
+            style="@style/style_title_form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnContractTabAccountValueNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/style_title_edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext"
+            android:text="@string/txt_contract_tab_account_value_title_loan" />
+
+        <TextView
+            style="@style/style_title_edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext"
+            android:text="@string/txt_contract_tab_account_value_title_pay" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvContractTabAccountValueNoData"
+        style="@style/style_empty_data_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_error_text"
+        android:text="@string/txt_contract_tab_account_value_error"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvContractTabAccountValueMsgResponse"
+        style="@style/style_empty_data_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_error_text"
+        android:visibility="gone" />
+
+
+    <ExpandableListView
+        android:id="@+id/exListAccountValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|start"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_default"
+        android:background="@color/white"
+        android:divider="@color/group_divider_color"
+        android:dividerHeight="@dimen/divider_height"
+        android:groupIndicator="@null"
+        android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft" />
+
+    <!-- title_value_concession -->
+
+    <LinearLayout
+        android:id="@+id/lnContractTabAccountValueConcession"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_header_section"
+        android:layout_marginTop="@dimen/dimen_margin_top_header_section"
+        android:background="@drawable/rounded_title_form"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_margin_right_icon_header_section"
+            android:src="@mipmap/ic_advance_title" />
+
+        <TextView
+            style="@style/style_title_form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/txt_contract_tab_account_value_title_value_concession" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tvContractTabMeritValueNoData"
+        style="@style/style_empty_data_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_error_text"
+        android:text="@string/txt_contract_tab_account_value_error"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvContractTabMeritValueMsgResponse"
+        style="@style/style_empty_data_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_error_text"
+        android:visibility="gone" />
+
+    <ExpandableListView
+        android:id="@+id/exListMeritValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|start"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_default"
+        android:background="@color/white"
+        android:divider="@color/group_divider_color"
+        android:dividerHeight="@dimen/divider_height"
+        android:groupIndicator="@null"
+        android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft" />
+</LinearLayout>

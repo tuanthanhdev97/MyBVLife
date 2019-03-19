@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true">
+
+    <TextView
+        android:id="@+id/tvSupportFunctionTitleHeaderForm"
+        style="@style/style_title_header_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/dimen_margin_header_with_form"
+        android:text="@string/txt_support_function_header" />
+
+    <RelativeLayout
+        android:id="@+id/rlSupportFunctionSearchInfor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSupportFunctionTitleHeaderForm"
+        android:background="@drawable/rounded_10dp"
+        android:paddingBottom="@dimen/dimen_padding_bottom_form">
+
+        <!-- Title infor customer -->
+
+        <RelativeLayout
+            android:id="@+id/rlSupportFunctionTitleSearchInfor"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_login_height_form_login_title_login"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/rounded_10dp_title_login"
+            android:paddingLeft="@dimen/dimen_padding_left_right_component_form">
+
+            <TextView
+                style="@style/style_title_form"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/txt_support_function_search_infor" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlSupportFunctionTitleSearchInfor"
+            android:padding="@dimen/dimen_padding_left_right_component_form">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!-- Contract Number -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_margin_title_with_edittext"
+                    android:text="@string/txt_support_function_username" />
+
+                <EditText
+                    android:id="@+id/edtSupportFunctionUsername"
+                    style="@style/style_text_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_login_height_edittext"
+                    android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext"
+                    android:background="@drawable/rounded_editext"
+                    android:singleLine="true"
+                     />
+
+                <TextView
+                    android:id="@+id/tvSupportFunctionUsernameError"
+                    style="@style/style_error_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_margin_bottom_error_text"
+                    android:visibility="gone" />
+
+                <Button android:textAllCaps="false"
+                    android:id="@+id/btnSupportFunctionSearch"
+                    style="@style/text_style_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_login_height_edittext"
+                    android:layout_marginBottom="@dimen/dimen_margin_error_with_title"
+                    android:layout_marginTop="@dimen/dimen_margin_button_with_last_input"
+                    android:background="@drawable/rounded_10dp_btn_login"
+                    android:drawableLeft="@mipmap/icon_search"
+                    android:drawablePadding="@dimen/dimen_login_padding_left"
+                    android:paddingLeft="@dimen/dimen_login_padding_left"
+                    android:paddingRight="@dimen/dimen_login_padding_left"
+                    android:text="@string/txt_payment_label_button_search" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvSupportFunctionDetailTypeDevice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_contract_type_phone"
+        android:visibility="gone" />
+
+</RelativeLayout>

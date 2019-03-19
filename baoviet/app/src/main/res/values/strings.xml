@@ -1,0 +1,808 @@
+<resources>
+    <string name="app_name">MyBvLife</string>
+    <string name="txt_login_header">CỔNG THÔNG TIN KHÁCH HÀNG</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_header_logout">Thoát</string>
+
+    <!--Error-->
+    <string name="message_error_system">Có lỗi xảy ra trong quá trình kết nối đến server, vui lòng đăng nhập lại. Nếu lỗi vẫn tồn tại, hãy liên hệ admin để được hỗ trợ.</string>
+    <string name="message_error_null_data">Không có dữ liệu trả về từ server, vui lòng liên hệ admin! </string>
+    <string name="message_infor_no_folder">Bạn chưa chọn folder để lưu tài liệu, hãy chọn folder!</string>
+    <string name="message_error_file_not_found">File không tồn tại, Mời bạn thử lại</string>
+    <string name="message_download_success">Tải thành công</string>
+    <string name="message_download_unsuccess">Tải về không thành công do kết nối đến server không ổn định, hãy thử lại!</string>
+    <string name="message_granted">Bạn đã được cấp quyền ghi vào bộ nhớ, nhưng để bắt đầu cho lần tải về đầu tiên bạn cần khởi động lại ứng dụng.</string>
+    <string name="message_denied">Bạn đã hủy cấp quyền truy cập bộ nhớ thiết bị nên không thể tải về, hãy cấp quyền truy cập và thử lại</string>
+    <string name="message_error_screen_resolution">Thiết bị của bạn có màn hình quá nhỏ để hiển thị ứng dụng. Hãy thử lại với thiết bị khác!</string>
+    <string name="message_error_data">Không có dữ liệu!</string>
+    <string name="message_error_network">Chức năng này cần có kết nối mạng, vui lòng kết nối mạng và thử lại!</string>
+    <string name="message_error_server">Có lỗi xảy ra phía server hoặc do kết nối mạng của bạn không ổn định, hãy kiểm tra và kết nối lại!</string>
+    <string name="action_settings">Settings</string>
+    <string name="txt_hint_date">DD/MM/YYYY</string>
+    <string name="txt_error_date"><font fgcolor="red">Bạn nhập ngày tra cứu không hợp lệ!</font></string>
+    <!-- Login screen -->
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_main_fragment">MainFragment</string>
+    <string name="txt_Login_Infor_Lisence">Bản quyền @Tổng Công Ty Bảo Việt Nhân Thọ</string>
+    <string name="txt_Login_Security">Chính sách bảo mật</string>
+    <string name="txt_Login_Contact">Liên hệ</string>
+    <string name="txt_Login_Phone">HotLine miễn phí</string>
+    <string name="txt_Login_Chat">Chat trực tuyến</string>
+    <string name="txt_login_label_username">Tên đăng nhập <font fgcolor="red">(*)</font></string>
+    <string name="txt_login_hint_username">Tên đăng nhập</string>
+    <string name="txt_login_hint_password">Mật khẩu</string>
+    <string name="txt_login_label_password">Mật khẩu <font fgcolor="red">(*)</font></string>
+    <string name="txt_login_error_username"><font fgcolor="red">Tài khoản là bắt buộc</font></string>
+    <string name="txt_login_error_password"><font fgcolor="red">Mật khẩu là bắt buộc</font></string>
+    <string name="txt_Login_Terms">Quy định &amp; điều khoản</string>
+    <string name="txt_login_title">ĐĂNG NHẬP</string>
+    <string name="hint_verifycode">Mã xác minh</string>
+    <string name="txt_btn_login">Đăng Nhập</string>
+    <string name="txt_note_sign_up">Bạn chưa có tài khoản?</string>
+    <string name="txt_sign_up">Đăng ký</string>
+    <string name="txt_forgot_password">Quên tài khoản/mật khẩu</string>
+    <string name="txt_back_to_home">Quay lại trang chủ</string>
+    <string name="txt_payment">Thanh toán phí bảo hiểm</string>
+    <string name="txt_instructions">Hướng dẫn sử dụng</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="message_login_error">Đăng nhập thất bại</string>
+    <string name="message_confirm_logout">Bạn có muốn thoát ứng dụng không?</string>
+    <string name="txt_checkbox_save_password">Lưu mật khẩu</string>
+
+    <!-- footer -->
+    <string name="title_header_security">Chính sách bảo mật</string>
+    <string name="content_policy">
+<![CDATA[
+
+          <span>
+            <b>   1. Mật khẩu và đăng nhập </b>
+            <br/>
+            Để hỗ trợ quý khách có thể tra cứu được thông tin về Tài khoản bảo hiểm hưu trí và hợp đồng hưu trí nhóm, BVNT cung cấp cho quý khách thông tin tra cứu trực tuyến bao gồm:
+            <br/>
+            - Địa chỉ trang web: <a href="http://huutri.baovietnhantho.com.vn">http://huutri.baovietnhantho.com.vn</a>
+            <br/>
+            - Tên đăng nhập
+            <br/>
+            - Mật khẩu
+            <br/>
+            <br/>
+            <b>   2. Bảo mật tài khoản  </b>
+            <br/>
+            a. Quý khách phải có trách nhiệm bảo mật và giữ gìn tên truy cập, mật khẩu do BVNT cấp để đảm bảo rằng chỉ có duy nhất khách hàng mới có quyền sử dụng dịch vụ Cổng thông tin khách hàng và cần sử dụng mọi biện pháp cần thiết để tránh và ngăn chặn việc sử dụng dịch vụ bởi những người không có thẩm quyền.
+            <br/>
+            b. Quý khách không nên lưu mật khẩu theo bất kỳ cách nào mà người khác có thể nhận biết, không nên chọn mật khẩu dễ đoán biết như ngày sinh nhật, số điện thoại của bản thân.
+            <br/>
+            c. Không đặt tùy chọn của trình duyệt web cho phép lưu lại tên và mật khẩu người dùng.
+            <br/>
+            d. Thoát khỏi hệ thống Cổng thông tin khách hàng khi không sử dụng.
+            <br/>
+            e. Nếu quý khách nghi ngờ hoặc phát hiện rằng tên đăng nhập, mật khẩu bị lộ, bị mất cắp, quý khách cần lập tức thay đổi mật khẩu của mình. Nếu không thể tự thực hiện, quý khách có thể thông báo ngay cho BVNT thông qua Tổng đài Chăm sóc khách hàng 1900 558899 – nhánh số 4 để được hỗ trợ.
+            <br/>
+            <br/>
+            <b>   2. An toàn thông tin  </b>
+            <br/>
+            a. BVNT đảm bảo bí mật thông tin liên quan đến tài khoản hưu trí, hợp đồng hưu trí nhóm và các giao dịch của khách hàng theo quy định của pháp luật; cam kết khả năng hoạt động liên tục của hệ thống Cổng thông tin khách hàng; đảm bảo tính toàn vẹn của thông tin trong quá trình xử lý, lưu trữ và truyền nhận giữa BVNT và khách hàng; đảm bảo xác thực và nhận dạng được khách hàng khi khách hàng truy cập và sử dụng dịch vụ Cổng thông tin khách hàng và đảm bảo áp dụng các hình thức bảo vệ khách hàng phù hợp khác.
+            <br/>
+            b. BVNT có trách nhiệm bảo mật các thông tin cá nhân của khách hàng khi sử dụng dịch vụ Cổng thông tin khách hàng; BVNT không sử dụng thông tin khách hàng vào mục đích khác và cam kết không bán, tiết lộ, rò rỉ các thông tin đó.
+
+          </span>
+        ]]>
+    </string>
+    <string name="content_term">
+<![CDATA[
+		  <h3>QUY ĐỊNH VÀ ĐIỀU KHOẢN</h3>
+          <span>
+            <b>   1. Thông báo  </b>
+            <br/>
+            Vui lòng đọc kỹ các điều kiện và điều khoản dưới đây. Bằng việc truy cập vào trang web http://huutri/baovietnhantho.com.vn , Quý khách đồng ý chịu ràng buộc bởi các điều kiện và điều khoản dưới đây. Nếu Quý khách không đồng ý với các điều kiện và điều khoản này, xin vui lòng không truy cập vào Trang web.
+            <br/>
+            <br/>
+            <b>   2. Quyền sở hữu  </b>
+            <br/>
+            Trang Web này là tài sản của Tổng Công ty Bảo Việt Nhân Thọ (dưới đây gọi tắt là "BVNT"), thành viên của Tập đoàn Bảo Việt.
+            <br/>
+            <br/>
+            <b>   3. Bản quyền  </b>
+            <br/>
+            Bản quyền đối với Trang Web này, các màn hình hiển thị các Trang Web, thông tin và tài liệu trên đó, và cách sắp xếp của các thông tin và tài liệu này (“Tài Liệu”) được sở hữu bởi BVNT. Quý khách có thể tải về một bản sao của Tài Liệu; nếu cần cho mục đích tham khảo, Quý khách có thể giữ một bản sao tạm thời trên máy tính và in một bản sao Tài Liệu ra giấy. Quý khách cũng có thể sử dụng Tài Liệu theo cách khác theo quy định cho phép được thể hiện rõ trên Trang web này. Sử dụng trái phép Tài Liệu này có thể vi phạm luật bản quyền.
+            <br/>
+            <br/>
+            <b>   4. Sử dụng Tài Liệu  </b>
+            <br/>
+            Tài Liệu và các điều khoản, điều kiện và các mô tả thể hiện trên Trang Web này có thể thay đổi.
+            <br/>
+            <br/>
+            <b>   5. Các liên kết  </b>
+            <br/>
+            Trang Web này có thể có các liên kết tới các Trang Web được quản lý hoặc cung cấp bởi các đơn vị khác không thuộc BVNT. BVNT từ bỏ trách nhiệm đối với bất cứ thông tin, tài liệu, các sản phẩm hoặc dịch vụ được đăng tải hoặc cung cấp tại bất kỳ trang web nào không do BVNT cung cấp có liên kết với Trang web này. BVNT cũng không chịu trách nhiệm cho bất kỳ sai sót nào của sản phẩm hay dịch vụ nào được cung cấp hoặc quảng cáo tại các Trang Web đó.
+            <br/>
+            <br/>
+            <b>   6. Giới hạn trách nhiệm  </b>
+            <br/>
+            Trong giới hạn được pháp luật cho phép, trong mọi trường hợp BVNT sẽ không chịu trách nhiệm đối với bất kỳ thiệt hại, mất mát nào bao gồm nhưng không giới hạn, những thiệt hại, mất mát hay phí tổn trực tiếp hay gián tiếp, đặc biệt, ngẫu nhiên hay mang tính hệ quả phát sinh có liên quan đến Trang Web này hoặc bất kỳ các Trang Web được liên kết nào, hay từ việc bất kỳ bên nào sử dụng hoặc không thể sử dụng được Trang Web này hoặc bất kỳ Trang Web được liên kết nào.
+            <br/>
+            BVNT cam kết sẽ cung cấp dịch vụ sẵn sàng cho khách hàng sử dụng. Tuy nhiên, khách hàng cũng phải chấp nhận rằng, việc nâng cấp hệ thống, hệ thống quá tải và các trường hợp bất khả kháng khác cũng đồng nghĩa với việc dịch vụ không luôn luôn sẵn sàng tại mọi lúc mọi nơi.
+            <br/>
+            <br/>
+            <b>   7. Sử dụng  </b>
+            <br/>
+            Trang Web này không nhằm phân phối đến, hoặc sử dụng bởi, bất kỳ cá nhân hoặc tổ chức nào tại bất kỳ vùng lãnh thổ hay quốc gia nào mà việc phân phối hoặc sử dụng đó là trái với pháp luật địa phương.
+            <br/>
+            <br/>
+            <b>   8. Các điều khoản bổ sung  </b>
+            <br/>
+            Một số phần hoặc trang của Trang Web này có thể có các điều kiện và điều khoản riêng, là bổ sung cho những điều kiện và điều khoản này. Trong trường hợp xảy ra mâu thuẫn, các điều kiện và điều khoản riêng đó sẽ được áp dụng cho những phần hoặc trang tương ứng.
+           </span>]]>
+    </string>
+    <string name="content_contact">
+<![CDATA[
+			<h3>LIÊN HỆ</h3>
+    		<span>
+              Cảm ơn Quý khách đã sử dụng dịch vụ của Bảo Việt Nhân thọ, vui lòng liên hệ với chúng tôi qua các kênh dưới đây :
+              <br/>
+              ► <strong>Hotline</strong>
+              <br/>
+              <i> 1800 6966 </i> (dành cho khách hàng hiện hữu và đã có đăng ký số điện thoại)
+              <br/>
+              <i> 1900 558899 </i> nhánh số 5 (dành cho khách hàng tham gia bảo hiểm Hưu Trí Vững Nghiệp)
+              <br/>
+              <i> 1900 558899 </i> nhánh số 4 (dành cho tất cả khách hàng có nhu cầu tìm hiểu về sản phẩm và các dịch vụ của Bảo Việt Nhân thọ)
+              <br/>
+              ► <strong>Email:</strong> <i><a href="mailto:baovietnhantho@baoviet.com.vn?Subject= Tôi cần liên hệ về vấn đề &#8230" target="_top">baovietnhantho@baoviet.com.vn</a> </i>, chúng tôi sẽ liên hệ lại trong thời gian sớm nhất
+              <br/>
+              ►<strong>Trụ sở chính:</strong> Tầng 37, Keangnam Ha Noi Landmark Tower, Đường Phạm Hùng, Quận Nam Từ Liêm, Hà Nội<br/>
+              ► <strong> Mạng lưới hệ thống tại tất cả các tỉnh thành toàn quốc. </strong>
+          <br/>
+          <br/>
+           </span>
+    ]]>
+    </string>
+
+    <!-- forgot password-->
+    <string name="txt_forgot_password_header">Quên mật khẩu/tài khoản</string>
+    <string name="txt_forgot_password_header_infor_account">Vui lòng nhập thông tin để đặt lại mật khẩu của bạn</string>
+    <string name="txt_forgot_password_account">Tên đăng nhập</string>
+    <string name="txt_forgot_password_fullname">Họ Tên <font fgcolor="red">(*)</font></string>
+    <string name="txt_forgot_password_identify">Số CMND/HC/Thẻ CCCD</string>
+    <string name="txt_forgot_password_send_password">Gửi mật khẩu</string>
+    <string name="txt_forgot_password_note">Vui lòng nhập tên tài khoản để đặt lại mật khẩu của bạn</string>
+    <string name="txt_forgot_password_fullname_empty">Họ tên không được để trống</string>
+    <string name="txt_forgot_password_identify_empty">Số chứng minh thư không được để trống</string>
+    <string name="txt_forgot_password_success">Thông tin tài khoản đã được gửi thành công</string>
+
+
+    <!-- register screen -->
+    <string name="txt_register_title">Tạo tài khoản MyBVLife</string>
+    <string name="txt_register_title_infor_customer">Thông tin khách hàng</string>
+    <string name="txt_register_title_number_contract">Số hợp đồng <font fgcolor="red">(*)</font></string>
+    <string name="txt_register_hint_number_contract">Số hợp đồng</string>
+    <string name="txt_register_error_number_contract"><font fgcolor="red">Số hợp đồng là bắt buộc</font></string>
+    <string name="txt_register_type_account">Loại tài khoản của NSD <font fgcolor="red">(*)</font></string>
+    <string name="txt_register_buyer">Họ và tên <font fgcolor="red">(*)</font></string>
+    <string name="txt_register_hint_buyer">BMBH/NĐBH (của HĐ BMBH là tổ chức)</string>
+    <string name="txt_register_error_buyer"><font fgcolor="red">Họ và tên là bắt buộc</font></string>
+    <string name="txt_register_identify_code">Số CMND/Hộ chiếu/Thẻ CCCD <font fgcolor="red">(*)</font></string>
+    <string name="txt_register_hint_identify_code">Số CMND/HC/Thẻ CCCD</string>
+    <string name="txt_register_error_identify_code"><font fgcolor="red">Số CMND Hộ chiếu là bắt buộc</font></string>
+    <string name="txt_register_mobile_number">Điện thoại di động <font fgcolor="red">(*)</font></string>
+    <string name="txt_register_hint_mobile_number">Số điện thoại</string>
+    <string name="txt_register_error_mobile_number"><font fgcolor="red">Điện thoại di động là bắt buộc</font></string>
+    <string name="txt_register_email">Email <font fgcolor="red">(*)</font></string>
+    <string name="txt_register_hint_email">Địa chỉ Email</string>
+    <string name="txt_register_error_email"><font fgcolor="red">Email là bắt buộc</font></string>
+    <string name="txt_register_error_email_validate"><font fgcolor="red">Vui lòng nhập email đúng định dạng!</font></string>
+    <string name="txt_register_send_infor">Gửi Thông Tin</string>
+    <string name="txt_register_register_success">Đăng ký tài khoản thành công</string>
+    <string name="txt_register_note">
+<![CDATA[
+        <span>
+        <b><u><i>Lưu ý:</i></u></b>
+        <br/>
+        <br/>
+        1. Theo quy định của Bảo Việt Nhân thọ, <b>chỉ khách hàng là Bên mua bảo hiểm và/hoặc Người được bảo hiểm của Hợp đồng có Bên mua bảo hiểm là tổ chức mới có quyền tra cứu Hợp đồng.</b>
+Mọi trường hợp cố ý đăng nhập sai sẽ phải chịu trách nhiệm theo quy định của pháp luật.
+        <br/>
+        <br/>
+        2. Các thông tin phải chính xác theo thông tin đã đăng ký trên Hợp đồng. Bảo Việt Nhân thọ sẽ gửi thông tin Tài khoản và Mật khẩu qua email/điện thoại di động đã đăng ký.
+        <br/>
+        Trường hợp Quý khách có thay đổi email/số điện thoại, vui lòng liên hệ với Tổng đài Chăm sóc khách hàng</span>
+		]]>
+    </string>
+    <string name="txt_register_note2">
+        <![CDATA[
+    <span>
+    hoặc với công ty Bảo Việt Nhân thọ thành viên để được hỗ trợ và hướng dẫn thay đổi thông tin.
+    </span>
+    ]]></string>
+
+    <!-- Update password screen -->
+    <string name="txt_update_password_header">Thay đổi mật khẩu</string>
+    <string name="txt_update_password_label_username">Tên đăng nhập <font fgcolor="red">(*)</font></string>
+    <string name="txt_update_password_label_old_password">Mật khẩu cũ <font fgcolor="red">(*)</font></string>
+    <string name="txt_update_password_label_new_password">Mật khẩu mới <font fgcolor="red">(*)</font></string>
+    <string name="txt_update_password_label_confirm_password">Xác nhận mật khẩu mới <font fgcolor="red">(*)</font></string>
+    <string name="txt_update_password_username_empty"><font fgcolor="red">Tên đăng nhập là bắt buộc</font></string>
+    <string name="txt_update_password_old_password_empty"><font fgcolor="red">Mật khẩu cũ là bắt buộc</font></string>
+    <string name="txt_update_password_new_password_empty"><font fgcolor="red">Mật khẩu mới là bắt buộc</font></string>
+    <string name="txt_update_password_confirm_new_password_empty"><font fgcolor="red">Xác nhận mật khẩu mới là bắt buộc</font></string>
+    <string name="txt_update_password_label_button_update">Cập nhật</string>
+    <string name="txt_update_password_return_text">Quay lại trang </string>
+    <string name="txt_update_password_login_text"> Đăng nhập</string>
+    <string name="txt_update_password_note">Vì lý do an toàn thông tin, bạn hãy đổi mật khẩu!</string>
+    <string name="txt_btn_change_password">Đổi mật khẩu</string>
+
+    <!-- Payment screen -->
+    <string name="txt_payment_header">Thanh toán phí bảo hiểm</string>
+    <string name="txt_payment_title">Nhập thông tin</string>
+    <string name="txt_payment_label_number_contract">Số hợp đồng <font fgcolor="red">(*)</font></string>
+    <string name="txt_payment_enpty_number_contract"><font fgcolor="red">Số hợp đồng là bắt buộc</font></string>
+    <string name="txt_payment_label_name">Tên người nộp phí <font fgcolor="red">(*)</font></string>
+    <string name="txt_payment_empty_name"><font fgcolor="red">Tên người nộp phí là bắt buộc</font></string>
+    <string name="txt_payment_label_phone">Số điện thoại người nộp phí <font fgcolor="red">(*)</font></string>
+    <string name="txt_payment_empty_phone"><font fgcolor="red">Số điện thoại người nộp phí là bắt buộc</font></string>
+    <string name="txt_payment_wrong_format_phone"><font fgcolor="red">Số điện thoại người nộp phí không hợp lệ</font></string>
+    <string name="txt_payment_label_button_search">Tra Cứu</string>
+    <string name="txt_payment_detail_title">Chi tiết</string>
+    <string name="txt_payment_detail_fullname">Tên bên mua bảo hiểm</string>
+    <string name="txt_payment_detail_total_unpaid">Tổng số phí chưa nộp (VNĐ)</string>
+    <string name="txt_payment_detail_unit">Đơn vị tính: VNĐ</string>
+    <string name="txt_payment_detail_stt">STT</string>
+    <string name="txt_payment_detail_from_date">Kỳ phí từ ngày</string>
+    <string name="txt_payment_detail_to_date">Kỳ phí đến ngày</string>
+    <string name="txt_payment_detail_bill">Số phí hóa đơn</string>
+    <string name="txt_payment_detail_bill_vnd">Số phí hóa đơn (vnđ):</string>
+    <string name="txt_payment_detail_discount">Số phí chiêt khấu</string>
+    <string name="txt_payment_detail_discount_vnd">Số phí chiêt khấu (vnđ):</string>
+    <string name="txt_payment_detail_fee">Số phí phải thu</string>
+    <string name="txt_payment_detail_fee_vnd">Số phí phải thu (vnđ):</string>
+    <string name="txt_payment_detail_choose">Chọn</string>
+    <string name="txt_payment_detail_total">Tổng phí sẽ thanh toán:</string>
+    <string name="txt_payment_detail_choose_method_payment">Vui lòng chọn phương thức thanh toán</string>
+    <string name="txt_payment_detail_button_payment">Thanh toán</string>
+    <string name="txt_payment_detail_napas">Qua cổng NAPAS</string>
+    <string name="txt_payment_detail_bank_baoviet">Qua Ngân hàng Bảo Việt</string>
+    <string name="txt_payment_detail_no_data">Không tìm thấy dữ liệu</string>
+    <string name="message_payment_no_data">Không tìm thấy dữ liệu</string>
+    <string name="message_payment_no_data_in_30days">Hợp đồng trên không có phí đến hạn trong 30 ngày tới. Vui lòng xem thông tin chi tiết tại mục Truy vấn Hợp đồng</string>
+    <string name="txt_payment_detail_choose_bill">Vui lòng chọn hóa đơn cần thanh toán!</string>
+    <string name="txt_payment_detail_choose_bill_wrong_order">Bạn hãy thanh toán những kì phí sớm hơn trước</string>
+    <string name="message_payment_choose_bill">Vui lòng chọn hóa đơn cần thanh toán!</string>
+    <string name="message_payment_warning_choose_bill">Bạn không thể thanh toán kì phí này, vui lòng thanh toán kỳ phí trước đấy!</string>
+    <string name="txt_payment_detail_fee_period">Kỳ phí:</string>
+    <string name="txt_payment_input_manual">Nhập tay</string>
+    <string name="txt_payment_confirm_payment"><![CDATA[
+    Hiện nay, Bảo Việt Nhân thọ chính thức sử dụng Hóa đơn điện tử đối với các hợp đồng đăng ký và đóng phí bảo hiểm trực tuyến.
+    Sau 02 ngày làm việc kể từ khi hoàn tất giao dịch đóng phí này, Quý khách có thể tra cứu Hóa đơn điện tử tại Cổng thông tin khách hàng - MyBVLife địa chỉ https://mybvlife.baovietnhantho.com.vn.
+    Trường hợp cần hỗ trợ, vui lòng liên hệ qua Tổng đài Chăm sóc khách hàng 1900558899 (nhánh số 4).
+    <br/>Quý khách tiếp tục thanh toán qua
+     ]]>
+    </string>
+    <string name="txt_payment_confirm_napas">cổng NAPAS?</string>
+    <string name="txt_payment_confirm_bvbank">Ngân Hàng Bảo Việt?</string>
+    <!-- home page -->
+    <string name="txt_home_infor">
+<![CDATA[
+    	  <h5>
+            TRANG THÔNG TIN DÀNH CHO KHÁCH HÀNG
+          </h5>
+          <p>
+            Chào mừng Quý khách hàng đã đến với <b>Cổng thông tin Khách hàng - ePos</b> của Tổng Công ty Bảo Việt Nhân thọ (Tập Đoàn Bảo Việt).
+          </p>
+          <p>
+            Với phương châm <b>"Niềm tin vững chắc, cam kết vững bền"</b>, Bảo Việt Nhân thọ luôn chú trọng nâng cao chất lượng dịch vụ để mang đến sự hài lòng cho khách hàng.
+            Chúng tôi sẽ không ngừng đổi mới và phát triển để khách hàng được sử dụng các dịch vụ tiện ích nhất.
+          </p>
+          <p>
+            <b>Cổng thông tin Khách hàng - ePos</b> giúp Quý khách có thể tra cứu các thông tin liên quan đến Hợp đồng và thực hiện các giao dịch trực tuyến.
+          </p>
+          <p>
+            Nếu cần hỗ trợ thêm thông tin, Quý khách vui lòng liên hệ Tổng đài Chăm sóc Khách hàng 1800 6966, hoặc mạng lưới Công ty thành viên của Bảo Việt Nhân thọ để được tư vấn.
+          </p>
+          <p>
+            Bảo Việt Nhân thọ rất hân hạnh được phục vụ Quý khách!
+          </p>
+    ]]>
+    </string>
+
+    <!-- Manage Account Screen-->
+    <string name="txt_manage_account_header">QUẢN LÝ THÔNG TIN TÀI KHOẢN</string>
+    <string name="txt_manage_account_title_search_infor">Thông tin tìm kiếm</string>
+    <string name="txt_manage_account_username">Mã tài khoản đăng nhập</string>
+    <string name="txt_manage_account_name">Tên người sử dụng</string>
+    <string name="txt_manage_account_email">Email</string>
+    <string name="txt_manage_account_phone_number">Điện thoại DĐ</string>
+    <string name="txt_manage_account_status">Trạng thái của NSD</string>
+    <string name="txt_manage_account_type">Loại tài khoản của NSD</string>
+    <string name="txt_manage_account_from_date">Từ ngày</string>
+    <string name="txt_manage_account_to_date">Đến ngày</string>
+    <string name="txt_manage_account_contract_number_group">Hợp đồng bảo hiểm nhóm</string>
+    <string name="txt_manage_account_hint_contract_number">Hợp đồng số</string>
+    <string name="txt_manage_account_contract_number_invidual">Hợp đồng bảo hiểm cá nhân</string>
+    <string name="txt_manage_account_type_identification">Loại giấy tờ tùy thân</string>
+    <string name="txt_manage_account_number_identification">Số giấy tờ</string>
+    <string name="txt_manage_account_collapse">Thu nhỏ</string>
+    <string name="txt_manage_account_expand">Mở rộng</string>
+    <string name="txt_manage_account_search_button">Tra cứu</string>
+    <string name="txt_manage_account_title_list_account">Danh sách tài khoản</string>
+    <string name="txt_manage_account_label_account">Tài khoản</string>
+    <string name="txt_manage_account_label_status">Trạng thái</string>
+    <string name="txt_manage_account_deactive">Khóa</string>
+    <string name="txt_manage_account_active">Hoạt động</string>
+    <string name="txt_manage_account_list_type_account">Loại tài khoản:</string>
+    <string name="txt_manage_account_list_email">Email:</string>
+    <string name="txt_manage_account_list_address">Địa chỉ:</string>
+    <string name="txt_manage_account_list_fullname">Tên khách hàng:</string>
+    <string name="txt_manage_account_list_birthday">Ngày sinh:</string>
+    <string name="txt_manage_account_list_gender">Giới tính:</string>
+    <string name="txt_manage_account_list_identify_number">Số CMND:</string>
+    <string name="txt_manage_account_list_date_id">Ngày cấp:</string>
+    <string name="txt_manage_account_list_addresss_id">Nơi cấp:</string>
+    <string name="txt_manage_account_list_phone_number">Điện thoại cơ quan:</string>
+    <string name="txt_manage_account_list_job">Nghề nghiệp:</string>
+    <string name="txt_manage_account_list_permission">Phân quyền</string>
+    <string name="txt_manage_account_list_edit_account">Sửa tài khoản</string>
+    <string name="txt_manage_account_list_change_password">Đổi mật khẩu</string>
+    <string name="txt_manage_account_list_open_account">Mở tài khoản</string>
+
+    <!-- Contract/ Account Invidual-->
+    <string name="txt_contract_account_invidual_header">HỢP ĐỒNG/ TÀI KHOẢN (Cá Nhân)</string>
+    <string name="txt_contract_account_invidual_number_contract">Hợp đồng bảo hiểm số : </string>
+    <string name="txt_contract_account_invidual_warning">Dữ liệu được cập nhật đến ngày </string>
+    <string name="txt_contract_account_invidual_tab_infor_general">Thông tin chung</string>
+    <string name="txt_contract_account_invidual_tab_infor_customer">Thông tin khách hàng</string>
+    <string name="txt_contract_account_invidual_tab_value">Giá trị tài khoản</string>
+    <string name="txt_contract_account_invidual_tab_payment_process">Quá trình đóng phí</string>
+    <string name="txt_contract_account_invidual_tab_fees_and_costs">Phí và chi phí</string>
+    <string name="txt_contract_account_invidual_tab_benefit">Giải quyết quyền lợi</string>
+    <string name="txt_contract_account_invidual_tab_bill">Hóa đơn điện tử</string>
+    <string name="txt_contract_account_invidual_tab_notice">Thông báo thường niên</string>
+
+    <!-- Contract/ Account Group-->
+    <string name="txt_contract_account_group_header">HỢP ĐỒNG BẢO HIỂM (Nhóm)</string>
+    <string name="txt_contract_account_group_number_contract">Hợp đồng số:</string>
+    <string name="txt_contract_account_group_infor_contract_title">Thông tin hợp đồng</string>
+    <string name="txt_contract_account_group_release_date">Ngày phát hành</string>
+    <string name="txt_contract_account_group_effective_date">Ngày hiệu lực</string>
+    <string name="txt_contract_account_group_product">Sản phẩm</string>
+    <string name="txt_contract_account_group_product_code">Mã sản phẩm</string>
+    <string name="txt_contract_account_group_type">Loại bảo hiểm</string>s
+    <string name="txt_contract_account_group_status">Trạng thái</string>
+    <string name="txt_contract_account_group_contract_member">Hợp đồng thành viên</string>
+    <string name="txt_contract_account_group_payment_process">Quá trình đóng phí</string>
+    <string name="txt_contract_account_group_cost">Phí và chi phí</string>
+    <string name="txt_contract_account_group_payment_benefit">Thanh toán QLBH</string>
+    <string name="txt_contract_account_group_value_account">Giá trị tài khoản</string>
+    <string name="txt_contract_account_group_benefit">Quyền lợi bảo hiểm</string>
+    <string name="txt_contract_account_group_handle_benefit">GQQLBH</string>
+    <string name="txt_contract_account_group_ebill">Hóa đơn điện tử</string>
+    <string name="txt_contract_account_group_notice">Thông báo thường niên</string>
+
+
+    <!-- Tab General Infor -->
+    <string name="txt_contract_tab_general_infor_title_infor_account">Thông tin hợp đồng bảo hiểm</string>
+    <string name="txt_contract_tab_general_infor_label_product">Sản phẩm chính</string>
+    <string name="txt_contract_tab_general_infor_label_status">Trạng thái</string>
+    <string name="txt_contract_tab_general_infor_label_release_date">Ngày phát hành</string>
+    <string name="txt_contract_tab_general_infor_label_effective_date">Ngày hiệu lực</string>
+    <string name="txt_contract_tab_general_infor_label_amount_money">Số tiền bảo hiểm(STBH)(vnđ)</string>
+    <string name="txt_contract_tab_general_infor_label_rate">Tỷ lệ gia tăng STBH</string>
+    <string name="txt_contract_tab_general_infor_label_payment_deadline">Thời hạn đóng phí</string>
+    <string name="txt_contract_tab_general_infor_label_maintain_deadline">Thời hạn bảo hiểm</string>
+    <string name="txt_contract_tab_general_infor_title_benefit_insurance">Quyền lợi bảo hiểm</string>
+    <string name="txt_contract_tab_general_infor_label_retirement_benefits">Quyền lợi hưu trí</string>
+    <string name="txt_contract_tab_general_infor_label_periodically">Định kỳ nhận quyền lợi hưu trí</string>
+    <string name="txt_contract_tab_general_infor_label_special_option">Lựa chọn đặc biệt đón tuổi hưu</string>
+    <string name="txt_contract_tab_general_infor_label_date_retirement_benefits">Ngày đến hạn nhận quyền lợi hưu trí lần đầu</string>
+    <string name="txt_contract_tab_general_infor_label_standard_retirement_age">Tuổi nghỉ hưu chuẩn</string>
+    <string name="txt_contract_tab_general_infor_label_burial_allowance">Quyền lợi trợ cấp mai táng (vnđ)</string>
+    <string name="txt_contract_tab_general_infor_label_death_benefit_insurance">Quyền lợi bảo hiểm tử vong/Quyền lợi thương tật toàn bộ vĩnh viễn</string>
+    <string name="txt_contract_tab_general_infor_title_condition">Thông tin phí Bảo Hiểm</string>
+    <string name="txt_contract_tab_general_infor_label_pay_periodically">Định kỳ đóng phí</string>
+    <string name="txt_contract_tab_general_infor_label_premium_commitment">Phí bảo hiểm cam kết (vnđ)</string>
+    <string name="txt_contract_tab_general_infor_label_premium_regular">Phí bảo hiểm định kỳ (vnđ)</string>
+    <string name="txt_contract_tab_general_infor_label_membership_premium_rate">Tỷ lệ đóng phí của thành viên(%)</string>
+    <string name="txt_contract_tab_general_infor_label_next_payment_due_date">Ngày đến hạn đóng phí tiếp theo</string>
+    <string name="txt_contract_tab_general_infor_label_insurance_premiums">Phí bảo hiểm theo hóa đơn (vnđ)</string>
+    <string name="txt_contract_tab_general_infor_label_rate_insurance_buyer">Tỷ lệ đóng phí của bên mua bảo hiểm (%)</string>
+    <string name="txt_contract_tab_general_infor_label_death_benefit">Quyền lợi tử vong</string>
+    <string name="txt_contract_tab_general_infor_label_permanent_disability_benefit">Quyền lợi thương tật toàn bộ vĩnh viễn</string>
+    <string name="txt_contract_tab_general_infor_label_fatal_disease_benefit">Quyền lợi bệnh hiểm nghèo</string>
+    <string name="txt_contract_tab_general_infor_value_permanent_disability">Bằng 100% Quyền lợi bảo hiểm tử vong</string>
+    <string name="txt_contract_tab_general_infor_value_fatal_disease">Trả trước 50% Quyền lợi bảo hiểm tử vong nhưng không quá 500 triệu đồng (Quyền lợi này sẽ bị đối trừ khi chi trả các quyền lợi khác)"</string>
+    <string name="txt_contract_tab_general_infor_label_serious_illness_benefit">Quyền lợi bệnh nghiêm trọng (vnđ)</string>
+    <string name="txt_contract_tab_general_infor_label_financial_support_benefit">Quyền lợi hỗ trợ tài chính của BMBH (vnđ)</string>
+    <string name="message_general_infor_no_data">Không có dữ liệu</string>
+
+
+    <!-- Tab Customer Infor -->
+    <string name="txt_contract_tab_customer_infor_title_buyer">Bên mua bảo hiểm</string>
+    <string name="txt_contract_tab_customer_infor_title_buyer_assign">Bên mua bảo hiểm/Người được bảo hiểm</string>
+    <string name="txt_contract_tab_customer_infor_buyer_label_name">Họ và tên</string>
+    <string name="txt_contract_tab_customer_infor_buyer_label_representative">Người đại diện</string>
+    <string name="txt_contract_tab_customer_infor_buyer_label_birthday">Ngày sinh</string>
+    <string name="txt_contract_tab_customer_infor_buyer_label_gender">Giới tính</string>
+    <string name="txt_contract_tab_customer_infor_buyer_label_mail">eMail</string>
+    <string name="txt_contract_tab_customer_infor_buyer_label_phone">Điện thoại di động</string>
+    <string name="txt_contract_tab_customer_infor_buyer_label_phone_company">Điện thoại cơ quan</string>
+    <string name="txt_contract_tab_customer_infor_buyer_label_home_phone">Điện thoại nhà riêng</string>
+    <string name="txt_contract_tab_customer_infor_buyer_label_type_id">Loại giấy</string>
+    <string name="txt_contract_tab_customer_infor_buyer_label_number">Số giấy</string>
+    <string name="txt_contract_tab_customer_infor_buyer_label_date_id">Ngày cấp</string>
+    <string name="txt_contract_tab_customer_infor_buyer_label_address_id">Nơi cấp</string>
+    <string name="txt_contract_tab_customer_infor_buyer_label_tax_code">Mã số thuế</string>
+    <string name="txt_contract_tab_customer_infor_buyer_label_address">Địa chỉ liên hệ</string>
+    <string name="txt_contract_tab_customer_infor_title_assign">Người được bảo hiểm</string>
+    <string name="txt_contract_tab_customer_infor_assign_label_name">Họ và tên</string>
+    <string name="txt_contract_tab_customer_infor_assign_label_birthday">Ngày sinh</string>
+    <string name="txt_contract_tab_customer_infor_assign_label_gender">Giới tính</string>
+    <string name="txt_contract_tab_customer_infor_assign_label_mail">eMail</string>
+    <string name="txt_contract_tab_customer_infor_assign_label_phone">Điện thoại di động</string>
+    <string name="txt_contract_tab_customer_infor_assign_label_phone_company">Điện thoại cơ quan</string>
+    <string name="txt_contract_tab_customer_infor_assign_label_home_phone">Điện thoại nhà riêng</string>
+    <string name="txt_contract_tab_customer_infor_assign_label_type_id">Loại giấy</string>
+    <string name="txt_contract_tab_customer_infor_assign_label_number">Số giấy</string>
+    <string name="txt_contract_tab_customer_infor_assign_label_date_id">Ngày cấp</string>
+    <string name="txt_contract_tab_customer_infor_assign_label_address_id">Nơi cấp</string>
+    <string name="txt_contract_tab_customer_infor_assign_label_tax_code">Mã số thuế</string>
+    <string name="txt_contract_tab_customer_infor_assign_label_address">Địa chỉ liên hệ</string>
+    <string name="txt_contract_tab_customer_infor_title_beneficiary">Người thụ hưởng </string>
+    <string name="txt_contract_tab_customer_infor_beneficiary_label_fullname">Họ và tên:</string>
+    <string name="txt_contract_tab_customer_infor_beneficiary_label_birthday">Ngày sinh:</string>
+    <string name="txt_contract_tab_customer_infor_beneficiary_label_gender">Giới tính:</string>
+    <string name="txt_contract_tab_customer_infor_beneficiary_label_rate">Tỷ lệ thụ hưởng (%):</string>
+    <string name="txt_contract_tab_customer_infor_beneficiary_label_address">Địa chỉ:</string>
+    <string name="txt_contract_tab_customer_infor_beneficiary_label_mail">Email:</string>
+    <string name="txt_contract_tab_customer_infor_beneficiary_label_phone">Điện thoại:</string>
+    <string name="txt_contract_tab_customer_infor_beneficiary_label_mobile_phone">Di động:</string>
+    <string name="txt_contract_tab_customer_infor_beneficiary_label_phone_company">Cơ quan:</string>
+    <string name="txt_contract_tab_customer_infor_beneficiary_label_home_phone">Nhà riêng</string>
+    <string name="txt_contract_tab_customer_infor_beneficiary_label_identification">Giấy tờ tùy thân:</string>
+    <string name="txt_contract_tab_customer_infor_beneficiary_label_type_id">Loại giấy:</string>
+    <string name="txt_contract_tab_customer_infor_beneficiary_label_date_id">Ngày cấp:</string>
+    <string name="txt_contract_tab_customer_infor_beneficiary_label_number">Số giấy:</string>
+    <string name="txt_contract_tab_customer_infor_beneficiary_label_address_id">Nơi cấp:</string>
+    <string name="txt_contract_tab_customer_infor_beneficiary_label_tax_code">Mã số thuế:</string>
+    <string name="txt_contract_tab_customer_infor_beneficiary_label_product">Sản phẩm:</string>
+    <string name="message_infor_customer_no_data">Không có dữ liệu</string>
+
+
+    <string name="txt_contract_tab_customer_infor_beneficiary_fullname">Họ và Tên:</string>
+    <string name="txt_contract_tab_customer_infor_beneficiary_represent_name">Người đại diện:</string>
+    <string name="txt_contract_tab_customer_infor_beneficiary_birthday">Ngày sinh:</string>
+    <string name="txt_contract_tab_customer_infor_beneficiary_gender">Giới tính:</string>
+    <string name="txt_contract_tab_customer_infor_beneficiary_rate">Tỷ lệ thụ hưởng (%):</string>
+    <string name="txt_contract_tab_customer_infor_beneficiary_relate">Quan hệ với NĐBH:</string>
+    <string name="txt_contract_tab_customer_infor_beneficiary_address">Địa chỉ:</string>
+    <string name="txt_contract_tab_customer_infor_beneficiary_email">Email:</string>
+    <string name="txt_contract_tab_customer_infor_beneficiary_phone">Điện thoại:</string>
+    <string name="txt_contract_tab_customer_infor_beneficiary_mobilephone">Di động:</string>
+    <string name="txt_contract_tab_customer_infor_beneficiary_companyphone">Cơ quan:</string>
+    <string name="txt_contract_tab_customer_infor_beneficiary_homephone">Nhà riêng:</string>
+    <string name="txt_contract_tab_customer_infor_beneficiary_identification">Giấy tờ tùy thân:</string>
+    <string name="txt_contract_tab_customer_infor_beneficiary_type_identification">Loại giấy:</string>
+    <string name="txt_contract_tab_customer_infor_beneficiary_number_identification">Số giấy:</string>
+    <string name="txt_contract_tab_customer_infor_beneficiary_date_identification">Ngày cấp:</string>
+    <string name="txt_contract_tab_customer_infor_beneficiary_address_identification">Nơi cấp:</string>
+    <string name="txt_contract_tab_customer_infor_beneficiary_tax_code">Mã số thuế</string>
+    <string name="txt_contract_tab_customer_infor_beneficiary_product">Sản phẩm:</string>
+
+    <!-- Tab value Account-->
+    <string name="txt_contract_tab_account_value_title_value_account">Giá trị tài khoản</string>
+    <string name="txt_contract_tab_account_value_title_confession">Giá trị giải ước</string>
+    <string name="txt_contract_tab_account_value_title_value_concession">Tạm ứng từ giá trị giải ước</string>
+    <string name="txt_contract_tab_account_value_title_loan">- Tạm ứng từ giá trị giải ước (vay theo hợp đồng).</string>
+    <string name="txt_contract_tab_account_value_title_pay">- Tạm ứng từ giá trị giải ước để đóng phí.</string>
+    <string name="txt_contract_tab_account_value_error">Không có dữ liệu</string>
+    <string name="txt_contract_tab_account_value_empty">Chưa chỉ định người thụ hưởng</string>
+    <string name="message_value_account_no_data">Không có dữ liệu</string>
+    <string name="txt_contract_tab_account_value_date">Ngày:</string>
+    <string name="txt_contract_tab_account_value_total">Tổng tiền:</string>
+    <string name="txt_contract_tab_account_value_vnd">Giá trị tài khoản (vnđ):</string>
+    <string name="txt_contract_tab_account_value_insured_person">Người được BH:</string>
+    <string name="txt_contract_tab_account_value_insured_person_value">- Giá trị (vnđ):</string>
+    <string name="txt_contract_tab_account_value_insured_person_rate">- Tỷ lệ (%):</string>
+    <string name="txt_contract_tab_account_value_buyer">Bên mua BH:</string>
+    <string name="txt_contract_tab_account_value_buyer_value">- Giá trị (vnđ):</string>
+    <string name="txt_contract_tab_account_value_buyer_rate">- Tỷ lệ (%):</string>
+    <string name="txt_contract_tab_account_value_summary">Tổng:</string>
+    <string name="txt_contract_tab_account_value_">Tổng:</string>
+    <string name="txt_contract_tab_account_value_merit_value_date">Ngày:</string>
+    <string name="txt_contract_tab_account_value_merit_value_total">Tổng tiền:</string>
+
+    <!-- Tab payment process-->
+    <string name="txt_contract_tab_payment_process_title_infor">Thông tin phí đã đóng</string>
+    <string name="txt_contract_tab_payment_process_label_total">Tổng phí định kỳ đã đóng tới ngày</string>
+    <string name="txt_contract_tab_payment_process_label_total_extra">Tổng phí đóng thêm đã đóng tới ngày </string>
+    <string name="txt_contract_tab_payment_process_title_detail">Chi tiết giao dịch đóng phí</string>
+    <string name="txt_contract_tab_payment_process_label_from_date">Từ ngày</string>
+    <string name="txt_contract_tab_payment_process_label_to_date">Đến ngày</string>
+    <string name="txt_contract_tab_payment_process_button_search">Tra cứu</string>
+    <string name="txt_contract_tab_payment_process_type_currency">(vnđ)</string>
+    <string name="txt_contract_tab_payment_process_date_empty"><font fgcolor="red">Bạn phải nhập từ ngày đúng định dạng dd/mm/yyyy (vd: 01/01/2015).</font></string>
+    <string name="txt_contract_tab_payment_process_header_list_payment_number">Số giao dịch:</string>
+    <string name="txt_contract_tab_payment_process_header_list_effective_date">Ngày hiệu lực:</string>
+    <string name="txt_contract_tab_payment_process_header_list_amount_money">Số tiền:</string>
+    <string name="txt_contract_tab_payment_process_item_list_day_trading">Ngày giao dịch:</string>
+    <string name="txt_contract_tab_payment_process_item_list_periodic_premiums">Phí bảo hiểm định kỳ (vnđ):</string>
+    <string name="txt_contract_tab_payment_process_item_list_per_buyer">Bên mua bảo hiểm:</string>
+    <string name="txt_contract_tab_payment_process_item_list_member">Thành viên:</string>
+    <string name="txt_contract_tab_payment_process_item_list_additional_premium">Phí bảo hiểm đóng thêm (vnđ):</string>
+    <string name="txt_contract_tab_payment_process_item_list_add_buyer">Bên mua bảo hiểm:</string>
+    <string name="txt_contract_tab_payment_process_item_list_total">Tổng (vnđ):</string>
+    <string name="txt_contract_tab_payment_process_item_list_total_bvlife">Phí đóng (vnđ):</string>
+    <string name="message_payment_unsucess">Quá trình thanh toán xảy ra lỗi</string>
+    <string name="txt_payment_tab_no_data">Không có dữ liệu</string>
+    <string name="message_payment_tab_no_data">Không có dữ liệu</string>
+
+
+    <!-- Tab fee and cost-->
+    <string name="txt_contract_tab_fee_title">Phí và chi phí</string>
+    <string name="txt_contract_tab_fee_label_from_date">Từ ngày</string>
+    <string name="txt_contract_tab_fee_label_to_date">Đến ngày</string>
+    <string name="txt_contract_tab_fee_button_search">Tra cứu</string>
+    <string name="txt_contract_tab_fee_header_list_payment_number">Số giao dịch:</string>
+    <string name="txt_contract_tab_fee_header_list_effective_date">Ngày hiệu lực:</string>
+    <string name="txt_contract_tab_fee_header_list_total">Tổng:</string>
+    <string name="txt_contract_tab_fee_item_list_deduct">Các khoản khấu trừ hàng tháng (vnđ):</string>
+    <string name="txt_contract_tab_fee_item_list_manage_contract">Phí quản lý hợp đồng:</string>
+    <string name="txt_contract_tab_fee_item_list_risk">Phí rủi ro:</string>
+    <string name="txt_contract_tab_fee_item_list_other">Các loại phí và chi phí khác (vnđ):</string>
+    <string name="txt_contract_tab_fee_no_data">Không có dữ liệu</string>
+    <string name="message_cost_and_fee_no_data">Không có dữ liệu</string>p
+
+    <!-- Tab Benefit-->
+    <string name="txt_contract_tab_benefit_title_benefit">Đang giải quyết quyền lợi</string>
+    <string name="txt_contract_tab_benefit_title_trading">Các giao dịch thanh toán quyền lợi bảo hiểm</string>
+    <string name="txt_contract_tab_benefit_error">Không có dữ liệu</string>
+    <string name="txt_contract_tab_benefit_assigner">Người được bảo hiểm:</string>
+    <string name="txt_contract_tab_benefit_birthday">Ngày sinh:</string>
+    <string name="txt_contract_tab_benefit_product_code">Mã sản phẩm:</string>
+    <string name="txt_contract_tab_benefit_day_risk">Ngày xảy ra sự kiện rủi ro:</string>
+    <string name="txt_contract_tab_benefit_risk_type">Loại rủi ro:</string>
+    <string name="txt_contract_tab_benefit_payment_number">Số giao dịch:</string>
+    <string name="txt_contract_tab_benefit_date_process">Ngày giải quyết:</string>
+    <string name="txt_contract_tab_benefit_amount_money">Số tiền (vnđ):</string>
+
+
+    <!-- Tab bill-->
+    <string name="txt_contract_tab_bill_title_search">Thông tin tìm kiếm</string>
+    <string name="txt_contract_tab_bill_label_bill_number">Số hóa đơn điện tử (HĐĐT)</string>
+    <string name="txt_contract_tab_bill_label_from_date">Từ ngày (ngày lập HĐĐT)</string>
+    <string name="txt_contract_tab_bill_label_to_date">Đến ngày (ngày lập HĐĐT)</string>
+    <string name="txt_contract_tab_bill_button_search">Tra cứu</string>
+    <string name="txt_contract_tab_bill_number">Số hóa đơn:</string>
+    <string name="txt_contract_tab_bill_number_contract">Số hợp đồng:</string>
+    <string name="txt_contract_tab_bill_effective_date">Ngày lập HĐĐT:</string>
+    <string name="txt_contract_tab_bill_amount_money">Số tiền (vnđ):</string>
+    <string name="txt_contract_tab_bill_show">Xem</string>
+    <string name="txt_contract_tab_bill_download">Tải PDF</string>
+    <string name="txt_contract_tab_bill_download_xml">Tải XML</string>
+    <string name="txt_contract_tab_bill_buyer">Bên mua bảo hiểm:</string>
+    <string name="txt_contract_tab_bill_fromdate">Kỳ phí từ ngày:</string>
+    <string name="txt_contract_tab_bill_todate">Kỳ phí đến ngày:</string>
+    <string name="txt_contract_tab_bill_tax_code">Mã số thuế:</string>
+    <string name="txt_contract_tab_bill_address">Địa chỉ:</string>
+    <string name="txt_contract_tab_bill_contract_number">Số hợp đồng:</string>
+    <string name="txt_contract_tab_bill_counselors">Tư vấn viên:</string>
+
+    <!-- Tab Notice-->
+    <string name="txt_contract_tab_notice_title_list_report">Danh sách báo cáo thường niên</string>
+    <string name="txt_contract_tab_notice_error">Không có dữ liệu</string>
+    <string name="txt_contract_tab_notice_number_contract">Số hợp đồng:</string>
+    <string name="txt_contract_tab_notice_year">Năm:</string>
+    <string name="txt_contract_tab_notice_buyer">Bên mua bảo hiểm:</string>
+    <string name="txt_contract_tab_notice_show">Xem</string>
+    <string name="txt_contract_tab_notice_download">Tải về</string>
+    <string name="txt_contract_tab_notice_effective_date">Ngày hiệu lực:</string>
+    <string name="txt_contract_tab_notice_receiver">Người được bảo hiểm:</string>
+    <string name="txt_contract_tab_notice_code_tvv">Mã TVV:</string>
+    <string name="txt_contract_tab_notice_name_tvv">Tên TVV:</string>
+    <string name="txt_contract_tab_notice_company">Công ty:</string>
+
+    <!-- Device Type -->
+    <string name="txt_contract_type_phone">Phone</string>
+    <string name="txt_contract_type_tablet">Tablet</string>
+
+    <!--Pagination-->
+    <string name="txt_pagination_back_to_first">&lt;&lt;</string>
+    <string name="txt_pagination_previous">&lt;</string>
+    <string name="txt_pagination_one">1</string>
+    <string name="txt_pagination_two">2</string>
+    <string name="txt_pagination_three">3</string>
+    <string name="txt_pagination_four">4</string>
+    <string name="txt_pagination_five">5</string>
+    <string name="txt_pagination_next">&gt;</string>
+    <string name="txt_pagination_go_to_last">&gt;&gt;</string>
+
+    <!-- Update Account -->
+    <string name="txt_update_account_header">Cập nhật thông tin tài khoản</string>
+    <string name="txt_update_account_detail_title">Chi tiết cập nhật</string>
+    <string name="txt_update_account_username_section">Tên truy cập</string>
+    <string name="txt_update_account_username_old">Tên đăng nhập</string>
+    <string name="txt_update_account_username_new">Tên truy cập khác</string>
+    <string name="txt_update_account_button_update">Cập nhật</string>
+    <string name="txt_update_account_button_cancel">Hủy</string>
+    <string name="txt_update_account_password_section">Mật khẩu</string>
+    <string name="txt_update_account_old_password">Mật khẩu cũ <font fgcolor="red">(*)</font></string>
+    <string name="txt_update_account_new_password">Mật khẩu mới <font fgcolor="red">(*)</font></string>
+    <string name="txt_update_account_confirm_new_password">Xác nhận mật khẩu mới <font fgcolor="red">(*)</font></string>
+    <string name="txt_update_account_empty_old_password">Mật khẩu cũ không được để trống</string>
+    <string name="txt_update_account_empty_new_password">Mật khẩu mới không được để trống</string>
+    <string name="txt_update_account_empty_confirm_new_password">Xác nhận mật khẩu mới không được để trống</string>
+    <string name="txt_update_account_wrong_confirm_new_password">Xác nhận mật khẩu mới không đúng</string>
+    <string name="txt_update_account_wrong_format_password">Mật khẩu là độ dài ít nhất 8 ký tự bao gồm ký tự số, chữ hoa, thường!</string>
+    <string name="txt_update_account_duplicate_password">Mật khẩu mới không được nhập trùng mật khẩu cũ</string>
+    <string name="txt_update_account_username_unsuccess">Cập nhật tên truy cập không thành công</string>
+    <string name="txt_update_account_username_success">Cập nhật tên truy cập thành công</string>
+    <string name="txt_update_account_password_unsuccess">Cập nhật mật khẩu không thành công</string>
+    <string name="txt_update_account_password_success">Cập nhật mật khẩu thành công</string>
+    <!--Infor Account-->
+    <string name="txt_infor_account_header">Thông tin tài khoản</string>
+    <string name="txt_infor_account_title_infor_account">Thông tin tài khoản</string>
+    <string name="txt_infor_account_title_detail">Chi tiết</string>
+    <string name="txt_infor_account_label_account_number">Tài khoản số</string>
+    <string name="txt_infor_account_label_type_account">Loại tài khoản</string>
+    <string name="txt_infor_account_label_email">e-Mail</string>
+    <string name="txt_infor_account_label_type_doc">Loại giấy</string>
+    <string name="txt_infor_account_label_fullname">Họ và tên</string>
+    <string name="txt_infor_account_label_phonenumber">Điện thoại di động</string>
+    <string name="txt_infor_account_label_address">Địa chỉ</string>
+    <string name="txt_infor_account_label_number_doc">Số giấy</string>
+    <string name="txt_infor_account_title_contract">Các hợp đồng liên quan</string>
+    <string name="txt_infor_account_label_contract_account">Hợp đồng/ Tài khoản:</string>
+    <string name="txt_infor_account_label_roleNSD">Quan hệ/ Vai trò của NSD:</string>
+    <string name="txt_infor_account_nodata">Không có dữ liệu</string>
+    <!--Support Function-->
+    <string name="txt_support_function_header">CHỨC NĂNG HỖ TRỢ</string>
+    <string name="txt_support_function_search_infor">Thông tin tìm kiếm</string>
+    <string name="txt_support_function_username">Tên đăng nhập <font fgcolor="red">(*)</font></string>
+    <string name="txt_support_function_username_empty"><font fgcolor="red">Tên đăng nhập là bắt buộc</font></string>
+    <string name="txt_support_function_not_find_username"><font fgcolor="red">Không tìm thấy tài khoản</font></string>
+    <string name="txt_support_function_button_search">Tra cứu</string>
+
+    <!-- Notification page -->
+    <string name="txt_notification_header">Thông báo</string>
+    <!--alert-->
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Title home tab-->
+    <string name="title_home_tab_payment">Thanh toán phí bảo hiểm</string>
+    <string name="title_home_tab_contract">Truy vấn hợp đồng</string>
+    <string name="title_home_tab_infor_account">Thông tin tài khoản</string>
+    <string name="title_home_tab_trade_online">Giao dịch online</string>
+    <string name="title_home_tab_product">Sản phẩm và Dịch vụ</string>
+    <string name="title_home_tab_contact">Thông tin liên hệ</string>
+
+    <string name="title_home_tab_item_payment">Thanh toán phí bảo hiểm</string>
+    <string name="title_home_tab_item_general_infor">Thông tin chung</string>
+    <string name="title_home_tab_item_customer_infor">Thông tin khách hàng</string>
+    <string name="title_home_tab_item_value_account">Giá trị tài khoản</string>
+    <string name="title_home_tab_item_payment_process">Quá trình đóng phí</string>
+    <string name="title_home_tab_item_fee_and_cost">Phí và chi phí</string>
+    <string name="title_home_tab_item_benefit">Giải quyết quyền lợi</string>
+    <string name="title_home_tab_item_ebill">Hóa đơn điện tử</string>
+    <string name="title_home_tab_item_annual_report">Thông báo thường niên</string>
+    <string name="title_home_tab_item_annual_report_view_pdf">Thông tin hợp đồng</string>
+    <string name="title_home_tab_item_invest">Đầu tư</string>
+    <string name="title_home_tab_item_save">Tích lũy</string>
+    <string name="title_home_tab_item_protected">Bảo vệ</string>
+    <string name="title_home_tab_item_retire">Hưu trí</string>
+    <string name="title_home_tab_item_business">Dành cho doanh nghiệp</string>
+    <string name="title_home_tab_item_bank">Bảo hiểm liên kết ngân hàng</string>
+    <string name="title_home_tab_item_infor_account">Thông tin tài khoản</string>
+    <string name="title_home_tab_item_update_infor">Cập nhật thông tin</string>
+    <string name="title_home_tab_item_security">Chính sách bảo mật</string>
+    <string name="title_home_tab_item_contact">Liên hệ</string>
+    <string name="title_home_tab_item_terms">Quy định &amp; điều khoản</string>
+    <string name="title_home_tab_item_chat_online">Chat trực tuyến</string>
+    <string name="title_home_tab_item_hotline">Hotline miễn phí</string>
+    <string name="title_home_tab_item_product">Sản phẩm bảo hiểm</string>
+    <string name="title_home_tab_item_service">Dịch vụ khách hàng</string>
+    <string name="title_home_tab_item_product_header">Sản phẩm bảo hiểm</string>
+    <string name="title_home_tab_item_service_header">Dịch vụ khách hàng</string>
+    <string name="title_activity_contract">ContractActivity</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <!--product-->
+    <string name="txt_product_invest">Sản phẩm đầu tư</string>
+    <string name="txt_product_save">Sản phẩm tích lũy</string>
+    <string name="txt_product_protected">Sản phẩm bảo vệ</string>
+    <string name="txt_product_retired">Sản phẩm hưu trí</string>
+    <string name="txt_product_business">Sản phẩm doanh nghiệp</string>
+    <string name="txt_product_bank">Sản phẩm liên kết ngân hàng</string>
+    <string name="txt_service_payment">Kênh thanh toán</string>
+    <string name="txt_service_change_infor_contract">Thay đổi thông tin hợp đồng bảo hiểm</string>
+    <string name="txt_service_benefit">Giải quyết quyền lợi bảo hiểm</string>
+    <string name="txt_service_customer">Những điều cần biết cho khách hàng</string>
+    <string name="txt_service_take_care">Chính sách chăm sóc khách hàng</string>
+
+</resources>

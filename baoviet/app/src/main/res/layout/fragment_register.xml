@@ -1,0 +1,146 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_padding_left_right_component_form">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_header_section"
+        android:background="@drawable/rounded_title_form"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_margin_right_icon_header_section"
+            android:src="@mipmap/ic_infor_customer" />
+
+        <TextView
+            style="@style/style_title_form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/txt_register_title_infor_customer" />
+    </LinearLayout>
+
+    <!-- Contract Number -->
+
+    <!--<TextView-->
+        <!--style="@style/style_title_edittext"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="@dimen/dimen_margin_bottom_title"-->
+        <!--android:inputType="number"-->
+        <!--android:text="@string/txt_register_title_number_contract" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/edtRegisterContractNumber"-->
+        <!--style="@style/style_text_edittext"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/dimen_login_height_edittext"-->
+        <!--android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext"-->
+        <!--android:background="@drawable/rounded_editext"-->
+        <!--android:inputType="number"-->
+        <!--android:singleLine="true" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tvRegisterContractNumberError"-->
+        <!--style="@style/style_error_text"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="@dimen/dimen_margin_bottom_error_text"-->
+        <!--android:visibility="gone" />-->
+
+    <!-- Buyer -->
+
+    <TextView
+        style="@style/style_title_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_title"
+        android:text="@string/txt_register_buyer" />
+
+    <EditText
+        android:id="@+id/edtRegisterBuyer"
+        style="@style/style_text_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_login_height_edittext"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext"
+        android:background="@drawable/rounded_editext"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/tvRegisterBuyerError"
+        style="@style/style_error_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_error_text"
+        android:visibility="gone" />
+
+    <!-- Identify number -->
+
+    <TextView
+        style="@style/style_title_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_title"
+        android:text="@string/txt_register_identify_code" />
+
+    <EditText
+        android:id="@+id/edtRegisterIdentifyNumber"
+        style="@style/style_text_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_login_height_edittext"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext"
+        android:background="@drawable/rounded_editext"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/tvRegisterIdentifyNumberError"
+        style="@style/style_error_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_error_text"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnSendInfor"
+        style="@style/text_style_button"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_login_height_edittext"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_button"
+        android:layout_marginTop="@dimen/dimen_margin_top_button"
+        android:background="@drawable/rounded_10dp_btn_login"
+        android:paddingLeft="@dimen/dimen_padding_left_right_button_inapp"
+        android:paddingRight="@dimen/dimen_padding_left_right_button_inapp"
+        android:text="@string/txt_register_send_infor"
+        android:textAllCaps="false" />
+    <!--&lt;!&ndash; Note &ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal">-->
+
+    <TextView
+        android:id="@+id/tvNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_error_text" />
+
+    <!--<TextView-->
+    <!--android:textColor="@color/black"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Tai day" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tvRegisterNote2"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content" />-->
+    <!--</LinearLayout>-->
+
+
+</LinearLayout>

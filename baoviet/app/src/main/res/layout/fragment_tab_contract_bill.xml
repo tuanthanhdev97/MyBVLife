@@ -1,0 +1,150 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_content"
+    android:orientation="vertical">
+
+    <!-- bill_title_search -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_header_section" android:background="@drawable/rounded_title_form"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_margin_right_icon_header_section"
+            android:src="@mipmap/ic_infor_search" />
+
+        <TextView
+            style="@style/style_title_form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/txt_contract_tab_bill_title_search" />
+    </LinearLayout>
+
+    <!-- bill number -->
+    <TextView
+        style="@style/style_title_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_title"
+        android:text="@string/txt_contract_tab_bill_label_bill_number" />
+
+    <EditText
+        android:id="@+id/edtContractTabBillNumber"
+        style="@style/style_text_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_login_height_edittext"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext"
+        android:background="@drawable/rounded_editext"
+        android:singleLine="true" />
+
+    <!-- from_date -->
+    <TextView
+        style="@style/style_title_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_title"
+        android:text="@string/txt_contract_tab_bill_label_from_date" />
+
+    <EditText
+        android:id="@+id/edtContractTabBillFromDate"
+        style="@style/style_text_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_login_height_edittext"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext"
+        android:background="@drawable/rounded_editext"
+        android:drawableRight="@mipmap/ic_calendar"
+        android:editable="false"
+        android:focusable="false"
+        android:hint="@string/txt_hint_date"
+        android:paddingRight="@dimen/dimen_login_padding_left_icon"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/tvContractTabBillErrorEmptyFromDate"
+        style="@style/style_error_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_error_text"
+        android:text="@string/txt_contract_tab_payment_process_date_empty"
+        android:visibility="gone" />
+
+    <!-- label_to_date -->
+    <TextView
+        style="@style/style_title_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_title"
+        android:text="@string/txt_contract_tab_bill_label_to_date" />
+
+    <EditText
+        android:id="@+id/edtContractTabBillToDate"
+        style="@style/style_text_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_login_height_edittext"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext"
+        android:background="@drawable/rounded_editext"
+        android:drawableRight="@mipmap/ic_calendar"
+        android:editable="false"
+        android:focusable="false"
+        android:hint="@string/txt_hint_date"
+        android:paddingRight="@dimen/dimen_login_padding_left_icon"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/tvContractTabBillErrorEmptyToDate"
+        style="@style/style_error_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_error_text"
+        android:text="@string/txt_contract_tab_payment_process_date_empty"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnContractTabBillSearch"
+        style="@style/text_style_button"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_login_height_edittext"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_button"
+        android:layout_marginTop="@dimen/dimen_margin_top_button"
+        android:background="@drawable/rounded_10dp_btn_login"
+        android:paddingLeft="@dimen/dimen_padding_left_right_button_inapp_tablet"
+        android:paddingRight="@dimen/dimen_padding_left_right_button_inapp"
+        android:text="@string/txt_contract_tab_bill_button_search"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/tvContractBillErrorDateErrorDate"
+        style="@style/style_empty_data_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_error_text"
+        android:text="@string/txt_error_date"
+        android:visibility="gone" />
+
+    <ExpandableListView
+        android:id="@+id/exListBill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|start"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_default"
+        android:background="@color/white"
+        android:divider="@color/group_divider_color"
+        android:dividerHeight="@dimen/divider_height"
+        android:groupIndicator="@null"
+        android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft" />
+
+    <include
+        android:id="@+id/rlBillPagination"
+        layout="@layout/pagination_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_margin_button_with_last_input"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,308 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_padding_left_right_component_form">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_header_section_tablet" android:background="@drawable/rounded_title_form"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_margin_right_icon_header_section_tablet"
+            android:src="@mipmap/ic_username_title" />
+
+        <TextView
+            style="@style/style_title_form_tablet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/txt_update_account_username_section" />
+    </LinearLayout>
+
+    <!-- Contract Number -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            style="@style/style_title_edittext_tablet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+            android:layout_weight="1"
+            android:text="@string/txt_update_account_username_old" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edtUpdateAccountUsername"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:background="@drawable/rounded_editext"
+                android:editable="false"
+                android:focusable="false"
+                android:inputType="number"
+                android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            style="@style/style_title_edittext_tablet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+            android:layout_weight="1"
+            android:text="@string/txt_update_account_username_new" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edtUpdateAccountUsernameOther"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:background="@drawable/rounded_editext"
+                android:singleLine="true" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <!-- mobile number -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button android:textAllCaps="false"
+            android:id="@+id/btnUpdateUsername"
+            style="@style/text_style_button_tablet"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+            android:layout_marginBottom="@dimen/dimen_margin_bottom_button_tablet"
+            android:layout_marginRight="@dimen/dimen_margin_right_two_button_tablet"
+            android:layout_marginTop="@dimen/dimen_margin_top_button_tablet"
+            android:background="@drawable/rounded_10dp_btn_login"
+            android:paddingLeft="@dimen/dimen_padding_left_right_button_inapp_tablet"
+            android:paddingRight="@dimen/dimen_padding_left_right_button_inapp_tablet"
+            android:text="@string/txt_update_account_button_update" />
+
+        <Button android:textAllCaps="false"
+            android:id="@+id/btnCancelUpdateUsername"
+            style="@style/text_style_button_tablet"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+            android:layout_marginBottom="@dimen/dimen_margin_bottom_button_tablet"
+            android:layout_marginTop="@dimen/dimen_margin_top_button_tablet"
+            android:background="@drawable/rounded_10dp_btn_login"
+            android:paddingLeft="@dimen/dimen_padding_left_right_button_inapp_tablet"
+            android:paddingRight="@dimen/dimen_padding_left_right_button_inapp_tablet"
+            android:text="@string/txt_update_account_button_cancel" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_header_section_tablet" android:background="@drawable/rounded_title_form"
+        android:layout_marginTop="@dimen/dimen_margin_top_header_section_tablet"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_margin_right_icon_header_section_tablet"
+            android:src="@mipmap/ic_password_title" />
+
+        <TextView
+            style="@style/style_title_form_tablet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/txt_update_account_password_section" />
+    </LinearLayout>
+
+    <!-- Old password-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            style="@style/style_title_edittext_tablet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+            android:layout_weight="1"
+            android:text="@string/txt_update_account_old_password" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edtUpdateAccountOldPassword"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:background="@drawable/rounded_editext"
+                android:password="true"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tvUpdateAccountOldPasswordError"
+                style="@style/style_error_text_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_error_text_tablet"
+                android:textColor="@android:color/holo_red_light"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--new password-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            style="@style/style_title_edittext_tablet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+            android:layout_weight="1"
+            android:text="@string/txt_update_account_new_password" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edtUpdateAccountNewPassword"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:background="@drawable/rounded_editext"
+                android:password="true"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tvUpdateAccountNewPasswordError"
+                style="@style/style_error_text_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_error_text_tablet"
+                android:textColor="@android:color/holo_red_light"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--Confirm new password-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            style="@style/style_title_edittext_tablet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+            android:layout_weight="1"
+            android:text="@string/txt_update_account_confirm_new_password" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edtUpdateAccountConfirmNewPassword"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:background="@drawable/rounded_editext"
+                android:password="true"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tvUpdateAccountConfirmNewPasswordError"
+                style="@style/style_error_text_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_error_text_tablet"
+                android:textColor="@android:color/holo_red_light"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button android:textAllCaps="false"
+            android:id="@+id/btnUpdatePassword"
+            style="@style/text_style_button_tablet"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+            android:layout_marginBottom="@dimen/dimen_margin_bottom_button_tablet"
+            android:layout_marginRight="@dimen/dimen_margin_right_two_button_tablet"
+            android:layout_marginTop="@dimen/dimen_margin_top_button_tablet"
+            android:background="@drawable/rounded_10dp_btn_login"
+            android:paddingLeft="@dimen/dimen_padding_left_right_button_inapp_tablet"
+            android:paddingRight="@dimen/dimen_padding_left_right_button_inapp_tablet"
+            android:text="@string/txt_update_account_button_update" />
+
+        <Button android:textAllCaps="false"
+            android:id="@+id/btnCancelUpdatePassword"
+            style="@style/text_style_button_tablet"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+            android:layout_marginBottom="@dimen/dimen_margin_bottom_button_tablet"
+            android:layout_marginTop="@dimen/dimen_margin_top_button_tablet"
+            android:background="@drawable/rounded_10dp_btn_login"
+            android:paddingLeft="@dimen/dimen_padding_left_right_button_inapp_tablet"
+            android:paddingRight="@dimen/dimen_padding_left_right_button_inapp_tablet"
+            android:text="@string/txt_update_account_button_cancel" />
+    </LinearLayout>
+
+</LinearLayout>
+

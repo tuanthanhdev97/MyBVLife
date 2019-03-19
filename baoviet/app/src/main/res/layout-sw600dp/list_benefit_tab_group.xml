@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/layout_padding_default"
+    android:paddingTop="@dimen/layout_padding_default"
+    android:weightSum="20">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:src="@mipmap/ic_expand_group_benefit" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="6"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/style_header_group_expandable_title_tablet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_contract_tab_benefit_payment_number" />
+
+        <TextView
+            android:id="@+id/tvBenefitTabHeaderNumberPayment"
+            style="@style/style_header_group_expandable_content_tablet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5.5"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/style_header_group_expandable_title_tablet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_contract_tab_benefit_date_process" />
+
+        <TextView
+            android:id="@+id/tvBenefitTabHeaderDateProcess"
+            style="@style/style_header_group_expandable_content_tablet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="6"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/style_header_group_expandable_title_tablet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_contract_tab_benefit_amount_money" />
+
+        <TextView
+            android:id="@+id/tvBenefitTabHeaderAmountMoney"
+            style="@style/style_header_group_expandable_content_tablet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!--<ImageView-->
+    <!--android:id="@+id/imgArrowBenefit"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="0.5"-->
+    <!--android:src="@drawable/ic_arrow_down"-->
+    <!--android:visibility="gone" />-->
+
+    <TextView
+        android:id="@+id/tvBenefitTabHeaderDeviceType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_contract_type_tablet"
+        android:visibility="gone" />
+</LinearLayout>

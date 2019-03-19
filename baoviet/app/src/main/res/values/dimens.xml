@@ -1,0 +1,190 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="rounded_width">0.5dp</dimen>
+    <dimen name="rounded_width_menu_item">1dp</dimen>
+
+    <!-- navigation header-->
+    <dimen name="dimen_nav_header_padding_top">40dp</dimen>
+    <dimen name="dimen_nav_header_padding_left_right">15dp</dimen>
+    <dimen name="dimen_nav_header_padding_bottom">15dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="dimen_login_width_form">280dp</dimen>
+    <dimen name="dimen_width_form">350dp</dimen>
+    <dimen name="dimen_login_height_form">500dp</dimen>
+    <dimen name="dimen_login_space_text">4dp</dimen>
+    <dimen name="dimen_login_height_form_login">340dp</dimen>
+    <dimen name="dimen_login_height_form_login_title_login">35dp</dimen>
+
+    <dimen name="dimen_login_height_form_login_edittext">300dp</dimen>
+    <dimen name="dimen_login_height_form_login_space">10dp</dimen>
+    <dimen name="dimen_login_padding_left_icon">10dp</dimen>
+    <dimen name="dimen_login_padding_left">10dp</dimen>
+
+    <dimen name="dimen_login_margin">20dp</dimen>
+    <dimen name="dimen_padding_login">20dp</dimen>
+    <dimen name="dimen_width_height_below_login_form">110dp</dimen>
+    <dimen name="dimen_padding_below_login_form">10dp</dimen>
+    <dimen name="dimen_size_icon_payment_instruction">40dp</dimen>
+    <dimen name="dimen_padding_top_content_fragment">20dp</dimen>
+    <dimen name="dimen_padding_left_content_fragment">10dp</dimen>
+    <dimen name="dimen_padding_right_content_fragment">10dp</dimen>
+    <dimen name="dimen_padding_bottom_content_fragment">10dp</dimen>
+    <dimen name="dimen_padding_top_content">20dp</dimen>
+    <dimen name="dimen_padding_left_content">15dp</dimen>
+    <dimen name="dimen_padding_right_content">15dp</dimen>
+    <dimen name="dimen_padding_bottom_content">20dp</dimen>
+    <dimen name="dimen_padding_bottom_footer">5dp</dimen>
+    <dimen name="dimen_padding_top_footer">10dp</dimen>
+    <dimen name="dimen_margin_top_footer">10dp</dimen>
+    <dimen name="dimen_margin_bottom_form_login">5dp</dimen>
+    <dimen name="dimen_padding_left_right_container">10dp</dimen>
+    <dimen name="dimen_margin_slide_with_content">10dp</dimen>
+    <dimen name="dimen_height_slideshow_phone">200dp</dimen>
+    <dimen name="dimen_height_slideshow_table">300dp</dimen>
+    <dimen name="dimen_padding_right_icon_menu">10dp</dimen>
+    <dimen name="dimen_margin_right_icon_chat">20dp</dimen>
+    <dimen name="dimen_margin_left_menu_table">20dp</dimen>
+    <dimen name="dimen_width_logo_actionbar">220dp</dimen>
+    <dimen name="dimen_width_logo_actionbar_tablet">320dp</dimen>
+    <dimen name="dimen_height_button_expand">30dp</dimen>
+    <dimen name="dimen_width_spinner_contract_number">110dp</dimen>
+    <dimen name="dimen_width_spinner_contract_number_group">140dp</dimen>
+    <dimen name="dimen_height_of_line">1dp</dimen>
+    <dimen name="dimen_margin_title_with_line">5dp</dimen>
+    <dimen name="dimen_margin_line_bottom">10dp</dimen>
+    <dimen name="dimen_margin_title_top">15dp</dimen>
+    <dimen name="dimen_margin_top_login_layout_register">15dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="nav_drawer_width">300dp</dimen>
+    <dimen name="layout_padding_default">10dp</dimen>
+    <dimen name="dimen_padding_left_group_exlist">20dp</dimen>
+    <dimen name="dimen_padding_pagination">3dp</dimen>
+
+    <dimen name="dimen_height_of_header_table_list">50dp</dimen>
+    <dimen name="dimen_height_of_item_table_list">30dp</dimen>
+    <dimen name="dimen_margin_top_tab_group">20dp</dimen>
+
+    <!-- Form size -->
+    <dimen name="dimen_padding_top_form">20dp</dimen>
+    <dimen name="dimen_padding_bottom_form">20dp</dimen>
+    <dimen name="dimen_padding_left_right_form">10dp</dimen>
+    <dimen name="dimen_margin_header_with_form">10dp</dimen>
+    <dimen name="dimen_margin_title_with_edittext">0dp</dimen>
+    <dimen name="dimen_margin_edittext_with_error">15dp</dimen>
+    <dimen name="bottom">15dp</dimen>
+    <dimen name="dimen_margin_edittext_with_title">25dp</dimen>
+    <dimen name="dimen_margin_error_with_title">10dp</dimen>
+    <dimen name="dimen_margin_button_with_last_input">10dp</dimen>
+    <dimen name="dimen_margin_bottom_title_form">20dp</dimen>
+    <dimen name="dimen_icon_margin_right_title_form">5dp</dimen>
+
+    <!--alert dialog-->
+    <dimen name="dimen_width_dialog">300dp</dimen>
+    <dimen name="dimen_padding_bottom_dialog">20dp</dimen>
+    <dimen name="dimen_height_title">40dp</dimen>
+    <dimen name="dimen_height_button">40dp</dimen>
+    <dimen name="dimen_padding_top_bottom_message">20dp</dimen>
+    <dimen name="dimen_padding_left_right_button">20dp</dimen>
+
+    <!-- Notification -->
+    <dimen name="dimen_padding_notification_item">15dp</dimen>
+    <dimen name="dimen_margin_top_notification_item">5dp</dimen>
+
+    <!-- Text size -->
+    <dimen name="txt_size_login_title">16sp</dimen>
+    <dimen name="edt_size_login">16sp</dimen>
+    <dimen name="edt_size_login_tablet">18sp</dimen>
+    <dimen name="navigation_drawer_width">240dp</dimen>
+
+    <dimen name="tab_height">48dp</dimen>
+    <dimen name="dimen_height_image_home">200dp</dimen>
+    <dimen name="dimen_height_image_home_tablet">300dp</dimen>
+    <dimen name="dimen_tab_home_max_width">100dp</dimen>
+    <dimen name="dimen_tab_home_min_width">100dp</dimen>
+    <dimen name="dimen_tab_menu_label_margin_top">20dp</dimen>
+    <dimen name="dimen_cell_spacing_horizontal">20dp</dimen>
+
+
+    <!--Left menu-->
+    <dimen name="dimen_nav_menu_padding_top_bottom">8dp</dimen>
+
+    <!--login form-->
+    <dimen name="diment_login_margin_top_item_input_login">10dp</dimen>
+    <dimen name="diment_login_margin_top_edittext">15dp</dimen>
+    <dimen name="diment_login_margin_icon_bottom">15dp</dimen>
+    <dimen name="diment_footer_height">70dp</dimen>
+    <dimen name="diment_margin_top_title_form">20dp</dimen>
+
+    <!--form_mobile-->
+    <dimen name="dimen_margin_bottom_header_section">20dp</dimen>
+    <dimen name="dimen_margin_top_header_section">30dp</dimen>
+    <dimen name="dimen_margin_right_icon_header_section">5dp</dimen>
+    <dimen name="dimen_margin_bottom_title">0dp</dimen>
+    <dimen name="dimen_margin_bottom_edittext">15dp</dimen>
+    <dimen name="dimen_margin_bottom_error_text">5dp</dimen>
+    <dimen name="dimen_margin_top_button">10dp</dimen>
+    <dimen name="dimen_margin_bottom_button">15dp</dimen>
+    <dimen name="dimen_margin_bottom_default">10dp</dimen>
+    <dimen name="dimen_padding_left_right_component_form">20dp</dimen>
+    <dimen name="dimen_padding_left_right_button_inapp">30dp</dimen>
+    <dimen name="dimen_login_height_edittext">40dp</dimen>
+    <dimen name="dimen_margin_right_two_button">15dp</dimen>
+    <dimen name="dimen_margin_bottom_header">10dp</dimen>
+    <dimen name="notification_height_header">50dp</dimen>
+    <dimen name="dimen_padding_left_right_header">50dp</dimen>
+    <dimen name="dimen_margin_right_accountnumbertext">10dp</dimen>
+    <dimen name="dimen_margin_right_group_title_expandable">10dp</dimen>
+    <dimen name="dimen_padding_left_text_with_icon_expand_group">10dp</dimen>
+    <dimen name="dimen_margin_right_paging">3dp</dimen>
+    <dimen name="dimen_width_height_pagination">30dp</dimen>
+    <dimen name="dimen_margin_bottom_text_link">20dp</dimen>
+    <dimen name="dimen_height_of_item_menu">120dp</dimen>
+    <integer name="column_gridview_phone">2</integer>
+    <dimen name="dimen_cell_spacing_vertical">20dp</dimen>
+    <dimen name="dimen_padding_right_value_item_exlist">30dp</dimen>
+    <dimen name="dimen_button_height">45dp</dimen>
+    <dimen name="dimen_login_width_form_login">240dp</dimen>
+    <dimen name="dimen_login_width_button_login">220dp</dimen>
+    <dimen name="dimen_update_password_margin_right_text">5dp</dimen>
+
+    <!--form_tablet-->
+    <dimen name="dimen_margin_bottom_header_section_tablet">25dp</dimen>
+    <dimen name="dimen_margin_top_header_section_tablet">35dp</dimen>
+    <dimen name="dimen_margin_right_icon_header_section_tablet">5dp</dimen>
+    <dimen name="dimen_margin_bottom_title_tablet">5dp</dimen>
+    <dimen name="dimen_margin_bottom_edittext_tablet">20dp</dimen>
+    <dimen name="dimen_margin_bottom_error_text_tablet">5dp</dimen>
+    <dimen name="dimen_margin_top_button_tablet">15dp</dimen>
+    <dimen name="dimen_margin_bottom_button_tablet">15dp</dimen>
+    <dimen name="dimen_margin_bottom_default_tablet">15dp</dimen>
+    <dimen name="dimen_padding_left_right_button_inapp_tablet">35dp</dimen>
+    <dimen name="dimen_login_height_edittext_tablet">45dp</dimen>
+    <dimen name="dimen_margin_right_two_button_tablet">20dp</dimen>
+    <dimen name="dimen_margin_bottom_header_tablet">15dp</dimen>
+    <dimen name="notification_height_header_tablet">60dp</dimen>
+    <dimen name="dimen_padding_left_right_header_tablet">20dp</dimen>
+    <dimen name="dimen_margin_right_accountnumbertext_tablet">15dp</dimen>
+    <dimen name="dimen_margin_right_group_title_expandable_tablet">10dp</dimen>
+    <dimen name="dimen_margin_right_paging_tablet">5dp</dimen>
+    <dimen name="dimen_width_height_pagination_tablet">40dp</dimen>
+    <dimen name="dimen_margin_bottom_text_link_tablet">25dp</dimen>
+    <dimen name="dimen_height_of_item_menu_tablet">140dp</dimen>
+    <integer name="column_gridview_tablet">3</integer>
+    <dimen name="dimen_padding_right_value_item_exlist_tablet">70dp</dimen>
+    <dimen name="dimen_button_height_tablet">55dp</dimen>
+    <dimen name="dimen_login_width_form_login_tablet">320dp</dimen>
+    <dimen name="dimen_login_width_button_login_tablet">300dp</dimen>
+    <dimen name="dimen_update_password_margin_right_text_tablet">10dp</dimen>
+
+
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+
+</resources>

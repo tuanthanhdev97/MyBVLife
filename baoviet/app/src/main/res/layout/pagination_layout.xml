@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlPagination"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rlPaginationTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_padding_default">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvPaginationBackToFirst"
+                style="@style/style_text_pagination"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_width_height_pagination"
+                android:layout_marginRight="@dimen/dimen_margin_right_paging"
+                android:background="@drawable/rounded_pagination"
+                android:gravity="center"
+                android:text="@string/txt_pagination_back_to_first" />
+
+            <TextView
+                android:id="@+id/tvPaginationPrevious"
+                style="@style/style_text_pagination"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_width_height_pagination"
+                android:layout_marginRight="@dimen/dimen_margin_right_paging"
+                android:background="@drawable/rounded_pagination"
+                android:gravity="center"
+                android:text="@string/txt_pagination_previous" />
+
+            <TextView
+                android:id="@+id/tvPaginationNumberOne"
+                style="@style/style_text_pagination"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_width_height_pagination"
+                android:layout_marginRight="@dimen/dimen_margin_right_paging"
+                android:background="@drawable/rounded_pagination"
+                android:gravity="center"
+                android:text="@string/txt_pagination_one" />
+
+            <TextView
+                android:id="@+id/tvPaginationNumberTwo"
+                style="@style/style_text_pagination"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_width_height_pagination"
+                android:layout_marginRight="@dimen/dimen_margin_right_paging"
+                android:background="@drawable/rounded_pagination"
+                android:gravity="center"
+                android:text="@string/txt_pagination_two" />
+
+            <TextView
+                android:id="@+id/tvPaginationNumberThree"
+                style="@style/style_text_pagination"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_width_height_pagination"
+                android:layout_marginRight="@dimen/dimen_margin_right_paging"
+                android:background="@drawable/rounded_pagination"
+                android:gravity="center"
+                android:text="@string/txt_pagination_three" />
+
+            <TextView
+                android:id="@+id/tvPaginationNumberFour"
+                style="@style/style_text_pagination"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_width_height_pagination"
+                android:layout_marginRight="@dimen/dimen_margin_right_paging"
+                android:background="@drawable/rounded_pagination"
+                android:gravity="center"
+                android:text="@string/txt_pagination_four" />
+
+            <TextView
+                android:id="@+id/tvPaginationNumberFive"
+                style="@style/style_text_pagination"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_width_height_pagination"
+                android:layout_marginRight="@dimen/dimen_margin_right_paging"
+                android:background="@drawable/rounded_pagination"
+                android:gravity="center"
+                android:text="@string/txt_pagination_five" />
+
+            <TextView
+                android:id="@+id/tvPaginationNext"
+                style="@style/style_text_pagination"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_width_height_pagination"
+                android:layout_marginRight="@dimen/dimen_margin_right_paging"
+                android:background="@drawable/rounded_pagination"
+                android:gravity="center"
+                android:text="@string/txt_pagination_next" />
+
+            <TextView
+                android:id="@+id/tvPaginationGoToLast"
+                style="@style/style_text_pagination"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_width_height_pagination"
+                android:background="@drawable/rounded_pagination"
+                android:gravity="center"
+                android:text="@string/txt_pagination_go_to_last" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlPaginationTop"
+        android:layout_marginTop="@dimen/layout_padding_default">
+
+        <TextView
+            android:id="@+id/tvPaginationTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

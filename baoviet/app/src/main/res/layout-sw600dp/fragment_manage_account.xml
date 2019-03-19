@@ -1,0 +1,325 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_content"
+    android:paddingLeft="@dimen/dimen_padding_left_right_container"
+    android:paddingRight="@dimen/dimen_padding_left_right_container">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:paddingBottom="@dimen/dimen_padding_bottom_form"
+        android:paddingTop="@dimen/dimen_padding_top_form">
+
+        <TextView
+            android:id="@+id/tvTitleHeaderForm"
+            style="@style/style_title_header_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/dimen_margin_header_with_form"
+            android:text="@string/txt_register_title" />
+
+        <RelativeLayout
+            android:id="@+id/rlloginform"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tvTitleHeaderForm"
+            android:background="@drawable/rounded_10dp">
+
+            <!-- Title infor customer -->
+
+            <RelativeLayout
+                android:id="@+id/rlTitleInforCustomer"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_form_login_title_login"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/rounded_10dp_title_login"
+                android:paddingLeft="@dimen/dimen_padding_left_right_component_form">
+
+                <TextView
+                    style="@style/style_title_form_tablet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/txt_register_title_infor_customer" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/rlTitleInforCustomer"
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_padding_left_right_component_form">
+
+                <!-- Contract Number -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                        android:layout_weight="1"
+                        android:text="@string/txt_register_title_number_contract" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/edtRegisterContractNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                            android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                            android:background="@drawable/rounded_editext"
+                            android:hint="@string/txt_register_hint_number_contract"
+                            android:textColor="@color/blue"
+                            android:singleLine="true"
+
+                            android:textSize="@dimen/edt_size_login" />
+
+                        <TextView
+                            android:id="@+id/tvRegisterContractNumberError"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dimen_margin_bottom_error_text_tablet"
+                            android:text="@string/txt_register_error_number_contract"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- type account -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                        android:layout_weight="1"
+                        android:text="@string/txt_register_type_account" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <Spinner android:overlapAnchor="false"
+                            android:id="@+id/spTypeAccount"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                            android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                            android:background="@drawable/custom_drop_down"
+                            android:spinnerMode="dropdown" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Buyer -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                        android:layout_weight="1"
+                        android:text="@string/txt_register_buyer" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/edtRegisterBuyer"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                            android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                            android:background="@drawable/rounded_editext"
+                            android:hint="@string/txt_register_hint_buyer"
+                            android:textColor="@color/blue"
+                            android:singleLine="true"
+
+                            android:textSize="@dimen/edt_size_login" />
+
+                        <TextView
+                            android:id="@+id/tvRegisterBuyerError"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dimen_margin_bottom_error_text_tablet"
+                            android:text="@string/txt_register_error_buyer"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- Identify number -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                        android:layout_weight="1"
+                        android:text="@string/txt_register_identify_code" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/edtRegisterIdentifyNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                            android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                            android:background="@drawable/rounded_editext"
+
+                            android:inputType="number"
+                            android:textColor="@color/blue"
+                            android:singleLine="true"
+
+                            android:textSize="@dimen/edt_size_login" />
+
+                        <TextView
+                            android:id="@+id/tvRegisterIdentifyNumberError"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dimen_margin_bottom_error_text_tablet"
+                            android:text="@string/txt_register_error_identify_code"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- mobile number -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                        android:layout_weight="1"
+                        android:text="@string/txt_register_mobile_number" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/edtRegisterMobileNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                            android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                            android:background="@drawable/rounded_editext"
+                            android:hint="@string/txt_register_hint_mobile_number"
+                            android:inputType="text|phone"
+                            android:textColor="@color/blue"
+                            android:singleLine="true"
+
+                            android:textSize="@dimen/edt_size_login" />
+
+                        <TextView
+                            android:id="@+id/tvRegisterMobileNumberError"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dimen_margin_bottom_error_text_tablet"
+                            android:text="@string/txt_register_error_mobile_number"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- email -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                        android:layout_weight="1"
+                        android:text="@string/txt_register_email" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/edtRegisterEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                            android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                            android:background="@drawable/rounded_editext"
+                            android:hint="@string/txt_register_hint_email"
+                            android:inputType="textEmailAddress"
+                            android:textColor="@color/blue"
+                            android:singleLine="true"
+
+                            android:textSize="@dimen/edt_size_login" />
+
+                        <TextView
+                            android:id="@+id/tvRegisterEmailError"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dimen_margin_bottom_error_text_tablet"
+                            android:text="@string/txt_register_error_email"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnSendInfor"
+                    style="@style/text_style_button_tablet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                    android:layout_marginBottom="@dimen/dimen_margin_bottom_error_text_tablet"
+                    android:background="@drawable/rounded_10dp_btn_login"
+                    android:drawableLeft="@mipmap/ic_sendinfor"
+                    android:drawablePadding="@dimen/dimen_login_padding_left"
+                    android:paddingLeft="@dimen/dimen_login_padding_left"
+                    android:paddingRight="@dimen/dimen_login_padding_left" android:textAllCaps="false"
+                    android:text="@string/txt_register_send_infor" />
+                <!-- Note -->
+
+                <TextView
+                    android:id="@+id/tvNote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_margin_bottom_error_text_tablet" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

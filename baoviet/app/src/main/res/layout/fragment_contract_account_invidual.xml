@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true">
+
+    <TextView
+        android:id="@+id/tvInvidualTitleHeaderForm"
+        style="@style/style_title_header_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/dimen_margin_header_with_form"
+        android:text="@string/txt_contract_account_invidual_header" />
+
+    <LinearLayout
+        android:id="@+id/lnContractNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_login_height_edittext"
+        android:layout_below="@+id/tvInvidualTitleHeaderForm"
+        android:layout_marginBottom="@dimen/dimen_margin_header_with_form"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_contract_account_invidual_number_contract" />
+
+        <Spinner android:overlapAnchor="false"
+            android:id="@+id/spContracNumber"
+            android:layout_width="@dimen/dimen_width_spinner_contract_number"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_drop_down"
+            android:spinnerMode="dropdown"></Spinner>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvLastTimeUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lnContractNumber"
+        android:layout_marginBottom="@dimen/dimen_margin_header_with_form" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvLastTimeUpdate"
+        android:background="@drawable/rounded_10dp">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_action_bar"
+            android:elevation="6dp"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:tabGravity="fill"
+            app:tabMode="scrollable" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tab_layout" />
+    </RelativeLayout>
+
+</RelativeLayout>

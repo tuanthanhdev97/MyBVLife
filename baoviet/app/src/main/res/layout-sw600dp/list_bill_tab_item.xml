@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/layout_padding_default"
+    android:paddingLeft="@dimen/dimen_padding_right_value_item_exlist_tablet"
+    android:paddingRight="@dimen/dimen_padding_right_value_item_exlist_tablet"
+    android:paddingTop="@dimen/layout_padding_default">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/style_header_item_expandable_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/txt_contract_tab_bill_buyer" />
+
+        <TextView
+            android:id="@+id/tvContractTabBillBuyer"
+            style="@style/style_header_item_expandable_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <!--tax code-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/style_header_item_expandable_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/txt_contract_tab_bill_tax_code" />
+
+        <TextView
+            android:id="@+id/tvContractTabBillTaxCode"
+            style="@style/style_header_item_expandable_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <!--address-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            style="@style/style_header_item_expandable_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="start"
+            android:text="@string/txt_contract_tab_bill_address" />
+
+        <TextView
+            android:id="@+id/tvContractTabBillAddress"
+            style="@style/style_header_item_expandable_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:gravity="end" />
+
+    </LinearLayout>
+    <!--contract number-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/style_header_item_expandable_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/txt_contract_tab_bill_contract_number" />
+
+        <TextView
+            android:id="@+id/tvContractTabBillContractNumber"
+            style="@style/style_header_item_expandable_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/style_header_item_expandable_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/txt_contract_tab_bill_fromdate" />
+
+        <TextView
+            android:id="@+id/tvContractTabBillFromDate"
+            style="@style/style_header_item_expandable_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/style_header_item_expandable_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/txt_contract_tab_bill_todate" />
+
+        <TextView
+            android:id="@+id/tvContractTabBillToDate"
+            style="@style/style_header_item_expandable_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <!--counselors-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/style_header_item_expandable_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/txt_contract_tab_bill_counselors" />
+
+        <TextView
+            android:id="@+id/tvContractTabBillCouselors"
+            style="@style/style_header_item_expandable_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvContactTabBillItemTypeDevice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_contract_type_tablet"
+        android:visibility="gone" />
+</LinearLayout>

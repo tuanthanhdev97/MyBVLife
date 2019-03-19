@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/layout_padding_default"
+    android:paddingTop="@dimen/layout_padding_default"
+    android:weightSum="20">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:src="@mipmap/ic_expand_group_cash" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="6"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/style_header_group_expandable_title_tablet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_contract_tab_payment_process_header_list_payment_number" />
+
+        <TextView
+            android:id="@+id/tvPaymentTabHeaderNumberPayment"
+            style="@style/style_header_group_expandable_content_tablet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5.5"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/style_header_group_expandable_title_tablet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_contract_tab_payment_process_header_list_effective_date" />
+
+        <TextView
+            android:id="@+id/tvPaymentTabHeaderEffectiveDate"
+            style="@style/style_header_group_expandable_content_tablet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="6"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/style_header_group_expandable_title_tablet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_contract_tab_payment_process_header_list_amount_money" />
+
+        <TextView
+            android:id="@+id/tvPaymentTabHeaderAmountMoney"
+            style="@style/style_header_group_expandable_content_tablet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgArrowPayment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/ic_arrow_down" />
+
+    <TextView
+        android:id="@+id/tvContactTabPaymentTypeDevice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_contract_type_tablet"
+        android:visibility="gone" />
+</LinearLayout>

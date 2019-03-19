@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dimen_width_dialog"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/rounded_layout_dialog"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dimen_padding_bottom_dialog">
+
+    <TextView
+        android:id="@+id/tvDialogTitle"
+        style="@style/title_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_height_title"
+        android:background="@drawable/gradient_header_alert"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tvDialogMessage"
+        style="@style/message_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:padding="@dimen/dimen_padding_top_bottom_message" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_height_button"
+        android:layout_marginTop="@dimen/dimen_margin_top_button"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/lnDialogBtnCancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/dimen_padding_left_right_button"
+            android:paddingRight="@dimen/dimen_padding_left_right_button"
+            android:textAllCaps="false"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/btnDialogCancel"
+                style="@style/text_style_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_10dp_btn_login"
+                android:text="Hủy"
+                android:textAllCaps="false"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnDialogBtnOk"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/dimen_padding_left_right_button"
+            android:paddingRight="@dimen/dimen_padding_left_right_button">
+
+            <Button
+                android:id="@+id/btnDialogOk"
+                style="@style/text_style_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_10dp_btn_login"
+                android:text="Xác nhận"
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

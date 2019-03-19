@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/layout_padding_default"
+    android:paddingLeft="@dimen/dimen_padding_right_value_item_exlist_tablet"
+    android:paddingRight="@dimen/dimen_padding_right_value_item_exlist_tablet"
+    android:paddingTop="@dimen/layout_padding_default">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/style_header_item_expandable_title_tablet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/txt_contract_tab_payment_process_item_list_day_trading" />
+
+        <TextView
+            android:id="@+id/tvContractTabPaymentProcessDayTrading"
+            style="@style/style_header_item_expandable_content_tablet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lnContractTabPaymentProcessPeriodicPremiumsTa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/style_header_item_expandable_title_tablet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_contract_tab_payment_process_item_list_periodic_premiums" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/style_header_item_expandable_title_tablet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="@dimen/dimen_padding_left_group_exlist"
+                android:text="@string/txt_contract_tab_payment_process_item_list_per_buyer" />
+
+            <TextView
+                android:id="@+id/tvContractTabPaymentProcessPerBuyer"
+                style="@style/style_header_item_expandable_content_tablet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/style_header_item_expandable_title_tablet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="@dimen/dimen_padding_left_group_exlist"
+                android:text="@string/txt_contract_tab_payment_process_item_list_member" />
+
+            <TextView
+                android:id="@+id/tvContractTabPaymentProcessMember"
+                style="@style/style_header_item_expandable_content_tablet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+        <TextView
+            style="@style/style_header_item_expandable_title_tablet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_contract_tab_payment_process_item_list_additional_premium" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/style_header_item_expandable_title_tablet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="@dimen/dimen_padding_left_group_exlist"
+                android:text="@string/txt_contract_tab_payment_process_item_list_per_buyer" />
+
+            <TextView
+                android:id="@+id/tvContractTabPaymentProcessAddBuyer"
+                style="@style/style_header_item_expandable_content_tablet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/style_header_item_expandable_title_tablet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="@dimen/dimen_padding_left_group_exlist"
+                android:text="@string/txt_contract_tab_payment_process_item_list_member" />
+
+            <TextView
+                android:id="@+id/tvContractTabPaymentProcessMemberSecond"
+                style="@style/style_header_item_expandable_content_tablet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnContractTabPaymentProcessPeriodicPremiumsBv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/style_header_item_expandable_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/txt_contract_tab_payment_process_item_list_periodic_premiums" />
+
+            <TextView
+                android:id="@+id/tvContractTabPaymentProcessPeriodicPremiumsBv"
+                style="@style/style_header_item_expandable_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/style_header_item_expandable_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/txt_contract_tab_payment_process_item_list_additional_premium" />
+
+            <TextView
+                android:id="@+id/tvContractTabPaymentProcessAdditionalPremiumBv"
+                style="@style/style_header_item_expandable_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvContractTabPaymentProcessTotalLabel"
+            style="@style/style_header_item_expandable_title_tablet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/txt_contract_tab_payment_process_item_list_total" />
+
+        <TextView
+            android:id="@+id/tvContractTabPaymentProcessTotal"
+            style="@style/style_header_item_expandable_content_tablet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvContactTabPaymentTypeDevice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_contract_type_tablet"
+        android:visibility="gone" />
+</LinearLayout>

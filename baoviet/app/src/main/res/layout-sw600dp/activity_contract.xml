@@ -1,0 +1,108 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_content"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvContractActionBar"
+            style="@style/style_text_header_page_tablet"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/notification_height_header_tablet"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/gradient_header_page"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dimen_padding_left_right_header_tablet"
+            android:paddingRight="@dimen/dimen_padding_left_right_header_tablet" />
+
+        <LinearLayout
+            android:id="@+id/lnContractNumberAccount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tvContractActionBar"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_padding_left_right_component_form">
+
+            <LinearLayout
+                android:id="@+id/lnContractSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/style_title_form_tablet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimen_margin_right_accountnumbertext_tablet"
+                    android:text="@string/txt_contract_account_invidual_number_contract" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                    android:background="@drawable/custom_drop_down"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spContractNumber"
+                        style="@style/style_text_edittext_tablet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/spinner_transparent"
+                        android:gravity="center_horizontal"
+                        android:overlapAnchor="false"
+                        android:spinnerMode="dropdown"></Spinner>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/spContractNumber"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/ic_down_select" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvContractLastestUpdate"
+                style="@style/style_title_form_tablet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:textColor="@color/yellow_dark" />
+
+            <FrameLayout
+                android:id="@+id/frameContractInfor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/diment_footer_height"></FrameLayout>
+        </LinearLayout>
+        <!-- Footer -->
+        <LinearLayout
+            android:id="@+id/lnFooterContract"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/diment_footer_height"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/gradient_header_page"
+            android:orientation="vertical"></LinearLayout>
+
+        <TextView
+            android:id="@+id/tvContractTypeDevice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_contract_type_tablet"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "909728677919",
+    "firebase_url": "https://mybvlife-87758.firebaseio.com",
+    "project_id": "mybvlife-87758",
+    "storage_bucket": "mybvlife-87758.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:909728677919:android:da7dfe77e9bded49",
+        "android_client_info": {
+          "package_name": "app.com.baoviet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "909728677919-vang398o1pbi6c1fsk81c3batrfjcrfl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAS6FELwEHiioZmcbT82ELQ1U-gqlCPMCg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

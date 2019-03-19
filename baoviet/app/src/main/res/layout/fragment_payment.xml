@@ -1,0 +1,304 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true">
+
+    <LinearLayout
+        android:id="@+id/lnPaymentSearchInfor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_padding_left_right_component_form">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_margin_bottom_header_section"
+            android:background="@drawable/rounded_title_form"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen_margin_right_icon_header_section"
+                android:src="@mipmap/ic_infor_search" />
+
+            <TextView
+                style="@style/style_title_form"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/txt_payment_title" />
+        </LinearLayout>
+        <!-- Contract Number -->
+
+        <TextView
+            style="@style/style_title_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_margin_bottom_title"
+            android:text="@string/txt_payment_label_number_contract" />
+
+        <Spinner
+            android:id="@+id/spPaymentContractNumber"
+            style="@style/style_text_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_login_height_edittext"
+            android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext"
+            android:background="@drawable/background_spinner"
+            android:overlapAnchor="false"
+            android:spinnerMode="dropdown"></Spinner>
+
+        <EditText
+            android:id="@+id/edtPaymentContractNumber"
+            style="@style/style_text_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_login_height_edittext"
+            android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext"
+            android:background="@drawable/rounded_editext"
+            android:inputType="number"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/tvPaymentContractNumberError"
+            style="@style/style_error_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_margin_bottom_error_text"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/cbPaymentTypeInput"
+            style="@style/style_title_edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext"
+            android:text="@string/txt_payment_input_manual" />
+
+        <!-- Buyer -->
+
+        <TextView
+            style="@style/style_title_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_margin_bottom_title"
+            android:text="@string/txt_payment_label_name" />
+
+        <EditText
+            android:id="@+id/edtPaymentBuyer"
+            style="@style/style_text_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_login_height_edittext"
+            android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext"
+            android:background="@drawable/rounded_editext"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/tvPaymentBuyerError"
+            style="@style/style_error_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_margin_bottom_error_text"
+            android:visibility="gone" />
+
+        <!-- mobile number -->
+
+        <TextView
+            style="@style/style_title_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_margin_bottom_title"
+            android:text="@string/txt_payment_label_phone" />
+
+        <EditText
+            android:id="@+id/edtPaymentMobileNumber"
+            style="@style/style_text_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_login_height_edittext"
+            android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext"
+            android:background="@drawable/rounded_editext"
+            android:inputType="text|phone"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/tvPaymentMobileNumberError"
+            style="@style/style_error_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_margin_bottom_error_text"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnPaymentSearch"
+            style="@style/text_style_button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_login_height_edittext"
+            android:layout_marginBottom="@dimen/dimen_margin_bottom_button"
+            android:layout_marginTop="@dimen/dimen_margin_top_button"
+            android:background="@drawable/rounded_10dp_btn_login"
+            android:paddingLeft="@dimen/dimen_padding_left_right_button_inapp"
+            android:paddingRight="@dimen/dimen_padding_left_right_button_inapp"
+            android:text="@string/txt_payment_label_button_search"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/rlPaymentInforDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lnPaymentSearchInfor"
+        android:background="@drawable/rounded_10dp"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_padding_left_right_component_form"
+        android:visibility="gone">
+        <!-- list_report-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_margin_bottom_header_section"
+            android:layout_marginTop="@dimen/dimen_margin_top_header_section"
+            android:background="@drawable/rounded_title_form"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen_margin_right_icon_header_section"
+                android:src="@mipmap/ic_infor_detail" />
+
+            <TextView
+                style="@style/style_title_form"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/txt_payment_detail_title" />
+        </LinearLayout>
+
+
+        <TextView
+            style="@style/style_title_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_margin_bottom_title"
+            android:text="@string/txt_payment_detail_fullname" />
+
+
+        <EditText
+            android:id="@+id/edtPaymentDetailFullName"
+            style="@style/style_text_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_login_height_edittext"
+            android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext"
+            android:background="@drawable/rounded_editext"
+            android:editable="false"
+            android:singleLine="true" />
+
+        <TextView
+            style="@style/style_title_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_margin_bottom_title"
+            android:text="@string/txt_payment_detail_total_unpaid" />
+
+        <EditText
+            android:id="@+id/edtPaymentDetailTotalUnpaid"
+            style="@style/style_text_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_login_height_edittext"
+            android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext"
+            android:background="@drawable/rounded_editext"
+            android:editable="false"
+            android:singleLine="true" />
+
+
+        <ExpandableListView
+            android:id="@+id/exListPaymentDetailInfor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|start"
+            android:layout_marginBottom="@dimen/dimen_margin_bottom_default"
+            android:background="@color/white"
+            android:divider="@color/color_hint"
+            android:dividerHeight="@dimen/divider_height"
+            android:groupIndicator="@null"
+            android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft" />
+
+        <LinearLayout
+            android:id="@+id/lnPaymentDetailTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_margin_bottom_default"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/style_color_total_money_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_payment_detail_total" />
+
+            <TextView
+                android:id="@+id/tvPaymentDetailTotal"
+                style="@style/style_color_total_money_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvPaymentDetailChooseMethod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_margin_bottom_default"
+            android:text="@string/txt_payment_detail_choose_method_payment"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rdgPaymentDetailChooseMethod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPaymentDetailChooseMethod"
+            android:layout_marginBottom="@dimen/dimen_margin_bottom_default"
+            android:checkedButton="@+id/rdgCheckPaymentDetailChooseMethod"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rdPaymentDetailNapas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/txt_payment_detail_napas" />
+
+            <RadioButton
+                android:id="@+id/rdPaymentDetailBankBaoViet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_payment_detail_bank_baoviet" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnPayment"
+            style="@style/text_style_button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_login_height_edittext"
+            android:layout_below="@+id/rdgPaymentDetailChooseMethod"
+            android:layout_marginBottom="@dimen/dimen_margin_bottom_button"
+            android:layout_marginTop="@dimen/dimen_margin_top_button"
+            android:background="@drawable/rounded_10dp_btn_login"
+            android:drawablePadding="@dimen/dimen_login_padding_left"
+            android:paddingLeft="@dimen/dimen_padding_left_right_button_inapp"
+            android:paddingRight="@dimen/dimen_padding_left_right_button_inapp"
+            android:text="@string/txt_payment_detail_button_payment"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvPaymentDetailTypeDevice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_contract_type_phone"
+        android:visibility="gone" />
+
+</RelativeLayout>

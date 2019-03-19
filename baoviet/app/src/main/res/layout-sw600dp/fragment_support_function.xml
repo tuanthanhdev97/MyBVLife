@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true">
+
+    <TextView
+        android:id="@+id/tvSupportFunctionTitleHeaderForm"
+        style="@style/style_title_header_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/dimen_margin_header_with_form"
+        android:text="@string/txt_support_function_header" />
+
+    <RelativeLayout
+        android:id="@+id/rlSupportFunctionSearchInfor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSupportFunctionTitleHeaderForm"
+        android:background="@drawable/rounded_10dp">
+
+        <!-- Title infor customer -->
+
+        <RelativeLayout
+            android:id="@+id/rlSupportFunctionTitleSearchInfor"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_login_height_form_login_title_login"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/rounded_10dp_title_login"
+            android:paddingLeft="@dimen/dimen_padding_left_right_component_form">
+
+            <TextView
+                style="@style/style_title_form_tablet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/txt_support_function_search_infor" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlSupportFunctionTitleSearchInfor"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_padding_left_right_component_form">
+
+            <!-- Contract Number -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                    android:layout_weight="1"
+                    android:text="@string/txt_support_function_username" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edtSupportFunctionUsername"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                        android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                        android:background="@drawable/rounded_editext"
+                        android:textColor="@color/blue"
+                        android:singleLine="true"
+                        android:textSize="@dimen/edt_size_login" />
+
+                    <TextView
+                        android:id="@+id/tvSupportFunctionUsernameError"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_margin_bottom_error_text_tablet"
+                        android:textColor="@android:color/holo_red_light"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- Buyer -->
+
+            <Button android:textAllCaps="false"
+                android:id="@+id/btnSupportFunctionSearch"
+                style="@style/text_style_button_tablet"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_error_text_tablet"
+                android:layout_marginTop="@dimen/dimen_margin_button_with_last_input"
+                android:background="@drawable/rounded_10dp_btn_login"
+                android:drawableLeft="@mipmap/icon_search"
+                android:drawablePadding="@dimen/dimen_login_padding_left"
+                android:paddingLeft="@dimen/dimen_login_padding_left"
+                android:paddingRight="@dimen/dimen_login_padding_left"
+                android:text="@string/txt_payment_label_button_search" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlSupportFunctionSearchInfor">
+
+        <TextView
+            android:id="@+id/tvSupportFunctionDetailTypeDevice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_contract_type_tablet"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

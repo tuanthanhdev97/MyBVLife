@@ -1,0 +1,106 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_content"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvContractActionBar"
+            style="@style/style_text_header_page"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/notification_height_header"
+            android:background="@drawable/gradient_header_page"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dimen_padding_left_right_header"
+            android:paddingRight="@dimen/dimen_padding_left_right_header" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_padding_left_right_component_form">
+
+            <LinearLayout
+                android:id="@+id/lnContractSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext"
+                android:orientation="horizontal"
+                android:weightSum="2.5">
+
+                <TextView
+                    style="@style/style_title_form"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="@string/txt_contract_account_invidual_number_contract" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dimen_login_height_edittext"
+                    android:layout_weight="1.5"
+                    android:gravity="end">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/custom_drop_down"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/spContractNumber"
+                            style="@style/style_text_edittext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/spinner_transparent"
+                            android:gravity="center_horizontal"
+                            android:overlapAnchor="false"
+                            android:spinnerMode="dropdown"></Spinner>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignRight="@+id/spContractNumber"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/ic_down_select" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+            <!--android:background="@drawable/custom_drop_down"-->
+            <TextView
+                android:id="@+id/tvContractLastestUpdate"
+                style="@style/style_title_form"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext"
+                android:textColor="@color/yellow_dark" />
+
+            <FrameLayout
+                android:id="@+id/frameContractInfor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></FrameLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvContractTypeDevice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_contract_type_phone"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+</ScrollView>

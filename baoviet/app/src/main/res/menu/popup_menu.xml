@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/tvPopupMenuInforAcc"
+        android:title="Thông tin tài khoản"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/tvPopupMenuUpdateAcc"
+        android:title="Cập nhật tài khoản"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/tvPopupMenuLogOut"
+        android:title="Đăng xuất"
+        app:showAsAction="always" />
+
+</menu>

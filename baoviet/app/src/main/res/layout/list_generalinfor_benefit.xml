@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvGeneralInforBenefitTitle"
+        style="@style/style_title_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_title" />
+
+    <EditText
+        android:id="@+id/edtGeneralInforBenefitContent"
+        style="@style/style_text_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_login_height_edittext"
+        android:layout_below="@+id/tvGeneralInforBenefitTitle"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext"
+        android:background="@drawable/rounded_editext"
+        android:editable="false"
+        android:singleLine="true" />
+</RelativeLayout>

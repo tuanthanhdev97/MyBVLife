@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/layout_padding_default"
+    android:paddingTop="@dimen/layout_padding_default"
+    android:weightSum="6">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.6"
+        android:src="@mipmap/ic_expand_group_user" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4.4"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimen_padding_left_text_with_icon_expand_group">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/style_header_group_expandable_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_contract_tab_customer_infor_beneficiary_fullname" />
+
+            <TextView
+                android:id="@+id/tvBeneficiaryTabHeaderFullName"
+                style="@style/style_header_group_expandable_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnBeneficiaryTabHeaderRespresentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/style_header_group_expandable_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_contract_tab_customer_infor_beneficiary_represent_name" />
+
+            <TextView
+                android:id="@+id/tvBeneficiaryTabHeaderRepresentName"
+                style="@style/style_header_group_expandable_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnBeneficiaryTabHeaderBirthDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/style_header_group_expandable_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_contract_tab_customer_infor_beneficiary_birthday" />
+
+            <TextView
+                android:id="@+id/tvBeneficiaryTabHeaderBirthDay"
+                style="@style/style_header_group_expandable_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnBeneficiaryTabHeaderGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/style_header_group_expandable_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_contract_tab_customer_infor_beneficiary_gender" />
+
+            <TextView
+                android:id="@+id/tvBeneficiaryTabHeaderGender"
+                style="@style/style_header_group_expandable_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imgArrowBeneficiary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/ic_arrow_down" />
+
+    <TextView
+        android:id="@+id/tvContactTabBeneficiaryTypeDevice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_contract_type_phone"
+        android:visibility="gone" />
+</LinearLayout>

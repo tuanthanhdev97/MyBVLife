@@ -1,0 +1,949 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/lnContractGeneral"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title Infor Account-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_margin_bottom_header_section_tablet"
+            android:background="@drawable/rounded_title_form"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen_margin_right_icon_header_section_tablet"
+                android:src="@mipmap/ic_infor_account_general_infor" />
+
+            <TextView
+                style="@style/style_title_form_tablet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/txt_contract_tab_general_infor_title_infor_account" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <!-- label_product -->
+            <TextView
+                style="@style/style_title_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                android:layout_weight="1"
+                android:text="@string/txt_contract_tab_general_infor_label_product" />
+
+            <EditText
+                android:id="@+id/edtContractTabGeneralProduct"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_editext"
+                android:editable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <!-- status -->
+            <TextView
+                style="@style/style_title_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                android:layout_weight="1"
+                android:text="@string/txt_contract_tab_general_infor_label_status" />
+
+            <EditText
+                android:id="@+id/edtContractTabGeneralStatus"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_editext"
+                android:editable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <!-- label_release_date -->
+            <TextView
+                style="@style/style_title_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                android:layout_weight="1"
+                android:text="@string/txt_contract_tab_general_infor_label_release_date" />
+
+            <EditText
+                android:id="@+id/edtContractTabGeneralReleaseDate"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_editext"
+                android:editable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <!-- label_effective_date -->
+            <TextView
+                style="@style/style_title_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                android:layout_weight="1"
+                android:text="@string/txt_contract_tab_general_infor_label_effective_date" />
+
+            <EditText
+                android:id="@+id/edtContractTabGeneralEffectiveDate"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_editext"
+                android:editable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <!-- label_amount_money -->
+            <TextView
+                style="@style/style_title_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                android:layout_weight="1"
+                android:text="@string/txt_contract_tab_general_infor_label_amount_money" />
+
+            <EditText
+                android:id="@+id/edtContractTabGeneralAmountMoney"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_editext"
+                android:editable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <!-- rate -->
+            <TextView
+                style="@style/style_title_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                android:layout_weight="1"
+                android:text="@string/txt_contract_tab_general_infor_label_rate" />
+
+            <EditText
+                android:id="@+id/edtContractTabGeneralRate"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_editext"
+                android:editable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <!-- label_payment_deadline -->
+            <TextView
+                style="@style/style_title_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                android:layout_weight="1"
+                android:text="@string/txt_contract_tab_general_infor_label_payment_deadline" />
+
+            <EditText
+                android:id="@+id/edtContractTabGeneralPaymentDeadline"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_editext"
+                android:editable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <!-- label_maintain_deadline -->
+            <TextView
+                style="@style/style_title_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                android:layout_weight="1"
+                android:text="@string/txt_contract_tab_general_infor_label_maintain_deadline" />
+
+            <EditText
+                android:id="@+id/edtContractTabGeneralMaintainDeadline"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_editext"
+                android:editable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <!-- title_benefit_insurance -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_margin_bottom_header_section_tablet"
+            android:layout_marginTop="@dimen/dimen_margin_top_header_section_tablet"
+            android:background="@drawable/rounded_title_form"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen_margin_right_icon_header_section_tablet"
+                android:src="@mipmap/ic_benefit_insurance" />
+
+            <TextView
+                style="@style/style_title_form_tablet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/txt_contract_tab_general_infor_title_benefit_insurance" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnContractTabGeneralBenefitFirst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <!-- label_retirement_benefit -->
+                <TextView
+                    style="@style/style_title_edittext_tablet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                    android:layout_weight="1"
+                    android:text="@string/txt_contract_tab_general_infor_label_retirement_benefits" />
+
+                <EditText
+                    android:id="@+id/edtContractTabGeneralRetirementBenefit"
+                    style="@style/style_text_edittext_tablet"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                    android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_editext"
+                    android:editable="false"
+                    android:singleLine="true"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/edt_size_login" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <!-- label_periodically -->
+                <TextView
+                    style="@style/style_title_edittext_tablet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                    android:layout_weight="1"
+                    android:text="@string/txt_contract_tab_general_infor_label_periodically" />
+
+                <EditText
+                    android:id="@+id/edtContractTabGeneralPeriodically"
+                    style="@style/style_text_edittext_tablet"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                    android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_editext"
+                    android:editable="false"
+                    android:singleLine="true"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/edt_size_login" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <!-- label_special_option -->
+                <TextView
+                    style="@style/style_title_edittext_tablet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                    android:layout_weight="1"
+                    android:text="@string/txt_contract_tab_general_infor_label_special_option" />
+
+                <EditText
+                    android:id="@+id/edtContractTabGeneralSpecialOption"
+                    style="@style/style_text_edittext_tablet"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                    android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_editext"
+                    android:editable="false"
+                    android:singleLine="true"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/edt_size_login" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <!-- label_date_retirement_benefits -->
+                <TextView
+                    style="@style/style_title_edittext_tablet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                    android:layout_weight="1"
+                    android:text="@string/txt_contract_tab_general_infor_label_date_retirement_benefits" />
+
+                <EditText
+                    android:id="@+id/edtContractTabGeneralDateRetirementBenefits"
+                    style="@style/style_text_edittext_tablet"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                    android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_editext"
+                    android:editable="false"
+                    android:singleLine="true"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/edt_size_login" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <!-- label_standard_retirement_age -->
+                <TextView
+                    style="@style/style_title_edittext_tablet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                    android:layout_weight="1"
+                    android:text="@string/txt_contract_tab_general_infor_label_standard_retirement_age" />
+
+                <EditText
+                    android:id="@+id/edtContractTabGeneralStandardRetirementAge"
+                    style="@style/style_text_edittext_tablet"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                    android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_editext"
+                    android:editable="false"
+                    android:singleLine="true"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/edt_size_login" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <!-- label_burial_allowance -->
+                <TextView
+                    style="@style/style_title_edittext_tablet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                    android:layout_weight="1"
+                    android:text="@string/txt_contract_tab_general_infor_label_burial_allowance" />
+
+                <EditText
+                    android:id="@+id/edtContractTabGeneralBurialAllowance"
+                    style="@style/style_text_edittext_tablet"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                    android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_editext"
+                    android:editable="false"
+                    android:singleLine="true"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/edt_size_login" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <!-- label_death_benefit_insurance -->
+                <TextView
+                    style="@style/style_title_edittext_tablet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                    android:layout_weight="1"
+                    android:text="@string/txt_contract_tab_general_infor_label_death_benefit_insurance" />
+
+                <EditText
+                    android:id="@+id/edtContractTabGeneralDeathBenefitInsurance"
+                    style="@style/style_text_edittext_tablet"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                    android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_editext"
+                    android:editable="false"
+                    android:singleLine="true"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/edt_size_login" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnContractTabGeneralBenefitSecond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- label_death_benefit -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    style="@style/style_title_edittext_tablet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                    android:layout_weight="1"
+                    android:text="@string/txt_contract_tab_general_infor_label_death_benefit" />
+
+                <EditText
+                    android:id="@+id/edtContractTabGeneralDeathBenefitSecond"
+                    style="@style/style_text_edittext_tablet"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                    android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_editext"
+                    android:editable="false"
+                    android:singleLine="true"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/edt_size_login" />
+            </LinearLayout>
+
+            <!-- permanent_disability_benefit -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    style="@style/style_title_edittext_tablet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                    android:layout_weight="1"
+                    android:text="@string/txt_contract_tab_general_infor_label_permanent_disability_benefit" />
+
+                <EditText
+                    android:id="@+id/edtContractTabGeneralPermanentDisabilityBenefitSecond"
+                    style="@style/style_text_edittext_tablet"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                    android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_editext"
+                    android:editable="false"
+                    android:singleLine="true"
+                    android:text="@string/txt_contract_tab_general_infor_value_permanent_disability"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/edt_size_login" />
+            </LinearLayout>
+            <!-- fatal disease benefit-->
+            <LinearLayout
+                android:id="@+id/lnContractTabGeneralFatalDiseaseBenefitSecond"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    style="@style/style_title_edittext_tablet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                    android:layout_weight="1"
+                    android:text="@string/txt_contract_tab_general_infor_label_fatal_disease_benefit" />
+
+                <EditText
+                    android:id="@+id/edtContractTabGeneralFatalDiseaseBenefitSecond"
+                    style="@style/style_text_edittext_tablet"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                    android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_editext"
+                    android:editable="false"
+                    android:singleLine="true"
+                    android:text="@string/txt_contract_tab_general_infor_value_fatal_disease"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/edt_size_login" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnContractTabGeneralBenefitThird"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- label_death_benefit -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    style="@style/style_title_edittext_tablet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                    android:layout_weight="1"
+                    android:text="@string/txt_contract_tab_general_infor_label_death_benefit" />
+
+                <EditText
+                    android:id="@+id/edtContractTabGeneralDeathBenefitThird"
+                    style="@style/style_text_edittext_tablet"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                    android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_editext"
+                    android:editable="false"
+                    android:singleLine="true"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/edt_size_login" />
+            </LinearLayout>
+            <!-- serious_illness_benefit -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    style="@style/style_title_edittext_tablet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                    android:layout_weight="1"
+                    android:text="@string/txt_contract_tab_general_infor_label_serious_illness_benefit" />
+
+                <EditText
+                    android:id="@+id/edtContractTabGeneralSeriousIllnessBenefitThird"
+                    style="@style/style_text_edittext_tablet"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                    android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_editext"
+                    android:editable="false"
+                    android:singleLine="true"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/edt_size_login" />
+            </LinearLayout>
+            <!-- fatal_disease_benefit third-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    style="@style/style_title_edittext_tablet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                    android:layout_weight="1"
+                    android:text="@string/txt_contract_tab_general_infor_label_fatal_disease_benefit" />
+
+                <EditText
+                    android:id="@+id/edtContractTabGeneralFatalDiseaseBenefitThird"
+                    style="@style/style_text_edittext_tablet"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                    android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_editext"
+                    android:editable="false"
+                    android:singleLine="true"
+                    android:text="@string/txt_contract_tab_general_infor_value_fatal_disease"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/edt_size_login" />
+            </LinearLayout>
+            <!-- financial_support_benefit -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    style="@style/style_title_edittext_tablet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                    android:layout_weight="1"
+                    android:text="@string/txt_contract_tab_general_infor_label_financial_support_benefit" />
+
+                <EditText
+                    android:id="@+id/edtContractTabGeneralFinancialSupportBenefitThird"
+                    style="@style/style_text_edittext_tablet"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                    android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_editext"
+                    android:editable="false"
+                    android:singleLine="true"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/edt_size_login" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnContractTabGeneralBenefitFourth"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/lvGeneralInforBenefit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/transparent"
+                android:dividerHeight="0dp"></ListView>
+        </LinearLayout>
+
+        <!-- title_condition_payment -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_margin_bottom_header_section_tablet"
+            android:layout_marginTop="@dimen/dimen_margin_top_header_section_tablet"
+            android:background="@drawable/rounded_title_form"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen_margin_right_icon_header_section_tablet"
+                android:src="@mipmap/ic_condition_fee" />
+
+            <TextView
+                style="@style/style_title_form_tablet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/txt_contract_tab_general_infor_title_condition" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <!-- label_pay_periodically -->
+            <TextView
+                style="@style/style_title_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                android:layout_weight="1"
+                android:text="@string/txt_contract_tab_general_infor_label_pay_periodically" />
+
+            <EditText
+                android:id="@+id/edtContractTabGeneralPayPeriodically"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_editext"
+                android:editable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lnContractTabGeneralPremiumCommitment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="2">
+            <!-- label_premium_commitment -->
+            <TextView
+                style="@style/style_title_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                android:layout_weight="1"
+                android:text="@string/txt_contract_tab_general_infor_label_premium_commitment" />
+
+            <EditText
+                android:id="@+id/edtContractTabGeneralPremiumCommitment"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_editext"
+                android:editable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnContractTabGeneralPremiumRegular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="2">
+            <!-- label_premium_commitment -->
+            <TextView
+                style="@style/style_title_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                android:layout_weight="1"
+                android:text="@string/txt_contract_tab_general_infor_label_premium_regular" />
+
+            <EditText
+                android:id="@+id/edtContractTabGeneralPremiumRegular"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_editext"
+                android:editable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lnContractTabGeneralMembershipPremiumRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="2">
+            <!-- label_membership_premium_rate -->
+            <TextView
+                style="@style/style_title_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                android:layout_weight="1"
+                android:text="@string/txt_contract_tab_general_infor_label_membership_premium_rate" />
+
+            <EditText
+                android:id="@+id/edtContractTabGeneralMembershipPremiumRate"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_editext"
+                android:editable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lnContractTabGeneralNnextPaymentDueDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="2">
+            <!-- label_next_payment_due_date -->
+            <TextView
+                style="@style/style_title_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                android:layout_weight="1"
+                android:text="@string/txt_contract_tab_general_infor_label_next_payment_due_date" />
+
+            <EditText
+                android:id="@+id/edtContractTabGeneralNnextPaymentDueDate"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_editext"
+                android:editable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lnContractTabGeneralInsurancePremiums"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="2">
+            <!-- label_insurance_premiums -->
+            <TextView
+                style="@style/style_title_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                android:layout_weight="1"
+                android:text="@string/txt_contract_tab_general_infor_label_insurance_premiums" />
+
+            <EditText
+                android:id="@+id/edtContractTabGeneralInsurancePremiums"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_editext"
+                android:editable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lnContractTabGeneralRateInsuranceBuyer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="2">
+            <!-- label_rate_insurance_buyer -->
+            <TextView
+                style="@style/style_title_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                android:layout_weight="1"
+                android:text="@string/txt_contract_tab_general_infor_label_rate_insurance_buyer" />
+
+            <EditText
+                android:id="@+id/edtContractTabGeneralRateInsuranceBuyer"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_editext"
+                android:editable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvContractGeneral"
+        style="@style/style_empty_data_text_tablet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_contract_tab_account_value_error"
+        android:textColor="@android:color/holo_red_light"
+        android:visibility="gone" />
+</LinearLayout>
+

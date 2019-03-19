@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_content"
+    android:orientation="vertical">
+
+    <!-- title_benefit-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_header_section" android:background="@drawable/rounded_title_form"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_margin_right_icon_header_section"
+            android:src="@mipmap/ic_process_title" />
+
+        <TextView
+            style="@style/style_title_form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/txt_contract_tab_benefit_title_benefit" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvContractBenefitProNoData"
+        style="@style/style_empty_data_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_error_text"
+        android:text="@string/txt_contract_tab_benefit_error"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvContractBenefitProError"
+        style="@style/style_empty_data_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_error_text"
+        android:visibility="gone" />
+
+    <ExpandableListView
+        android:id="@+id/exListBenefitProcess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|start"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_default"
+        android:background="@color/white"
+        android:divider="@color/group_divider_color"
+        android:dividerHeight="@dimen/divider_height"
+        android:groupIndicator="@null"
+        android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft" />
+
+    <!-- title_trading -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_header_section" android:background="@drawable/rounded_title_form"
+        android:layout_marginTop="@dimen/dimen_margin_top_header_section"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_margin_right_icon_header_section"
+            android:src="@mipmap/ic_payment_benefit_title" />
+
+        <TextView
+            style="@style/style_title_form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/txt_contract_tab_benefit_title_trading" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvContractBenefitNoData"
+        style="@style/style_empty_data_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_error_text"
+        android:text="@string/txt_contract_tab_benefit_error"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvContractBenefitError"
+        style="@style/style_empty_data_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_error_text"
+        android:visibility="gone" />
+
+    <ExpandableListView
+        android:id="@+id/exListBenefit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|start"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_default"
+        android:background="@color/white"
+        android:divider="@color/group_divider_color"
+        android:dividerHeight="@dimen/divider_height"
+        android:groupIndicator="@null"
+        android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft" />
+
+</LinearLayout>

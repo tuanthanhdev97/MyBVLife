@@ -1,0 +1,163 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_content"
+    android:orientation="vertical">
+
+    <!-- fee_title -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_header_section_tablet" android:background="@drawable/rounded_title_form"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_margin_right_icon_header_section_tablet"
+            android:src="@mipmap/ic_fee_title" />
+
+        <TextView
+            style="@style/style_title_form_tablet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/txt_contract_tab_fee_title" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <!-- from_date -->
+        <TextView
+            style="@style/style_title_edittext_tablet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+            android:layout_weight="1"
+            android:text="@string/txt_contract_tab_fee_label_from_date" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edtContractTabCostFromDate"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:background="@drawable/rounded_editext"
+                android:drawableRight="@mipmap/ic_calendar"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="@string/txt_hint_date"
+                android:paddingRight="@dimen/dimen_login_padding_left_icon"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tvContractTabCostErrorEmptyFromDate"
+                style="@style/style_error_text_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_error_text_tablet"
+                android:text="@string/txt_contract_tab_payment_process_date_empty"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <!-- label_to_date -->
+        <TextView
+            style="@style/style_title_edittext_tablet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+            android:layout_weight="1"
+            android:text="@string/txt_contract_tab_fee_label_to_date" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edtContractTabCostToDate"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:background="@drawable/rounded_editext"
+                android:drawableRight="@mipmap/ic_calendar"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="@string/txt_hint_date"
+                android:paddingRight="@dimen/dimen_login_padding_left_icon"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tvContractTabCostErrorEmptyToDate"
+                style="@style/style_error_text_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_error_text_tablet"
+                android:text="@string/txt_contract_tab_payment_process_date_empty"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnContractTabCostSearch"
+        style="@style/text_style_button_tablet"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_button_tablet"
+        android:layout_marginTop="@dimen/dimen_margin_top_button_tablet"
+        android:background="@drawable/rounded_10dp_btn_login"
+        android:paddingLeft="@dimen/dimen_padding_left_right_button_inapp_tablet"
+        android:paddingRight="@dimen/dimen_padding_left_right_button_inapp_tablet"
+        android:text="@string/txt_contract_tab_fee_button_search"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/tvContractCostErrorDate"
+        style="@style/style_empty_data_text_tablet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_error_text_tablet"
+        android:text="@string/txt_error_date"
+        android:visibility="gone" />
+
+    <ExpandableListView
+        android:id="@+id/exListFees"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|start"
+        android:background="@color/white"
+        android:divider="@color/group_divider_color"
+        android:dividerHeight="@dimen/divider_height"
+        android:groupIndicator="@null"
+        android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft" />
+
+    <include
+        android:id="@+id/rlFeesPagination"
+        layout="@layout/pagination_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_margin_button_with_last_input"
+        android:visibility="gone" />
+
+</LinearLayout>

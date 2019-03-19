@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvMainPolicy"
+            style="@style/small_text_note_bottom_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_login_space_text"
+            android:clickable="true"
+            android:onClick="onClickTextView"
+            android:text="@string/txt_Login_Security"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" |"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tvMainContact"
+            style="@style/small_text_note_bottom_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_login_space_text"
+            android:clickable="true"
+            android:onClick="onClickTextView"
+            android:text="@string/txt_Login_Contact"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" |"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tvMainTerm"
+            style="@style/small_text_note_bottom_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_login_space_text"
+            android:clickable="true"
+            android:onClick="onClickTextView"
+            android:text="@string/txt_Login_Terms"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvMainChat"
+            style="@style/small_text_note_bottom_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_login_space_text"
+            android:clickable="true"
+            android:onClick="onClickTextView"
+            android:text="@string/txt_Login_Chat"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" |"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tvMainHotline"
+            style="@style/small_text_note_bottom_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_login_space_text"
+            android:clickable="true"
+            android:onClick="onClickTextView"
+            android:text="@string/txt_Login_Phone"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/small_text_size_12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:onClick="onClickTextView"
+        android:text="@string/txt_Login_Infor_Lisence"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tvFooterTypeDevice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_contract_type_phone"
+        android:visibility="gone" />
+
+</LinearLayout>
+
+

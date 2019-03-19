@@ -1,0 +1,4 @@
+#Mon Feb 18 10:30:14 ICT 2019
+base.0=/Volumes/DriverX/DataWindow/3WORKSPACE/baoviet/app/build/intermediates/transforms/dexMerger/release/0
+path.0=classes.dex
+renamed.0=classes.dex

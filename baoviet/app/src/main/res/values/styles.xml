@@ -1,0 +1,257 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="small_text_note_bottom_login">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="small_text_note_bottom_main">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="small_text_login_button">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="text_style_button">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="text_style_button_tablet">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="text_style_button_login">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="text_style_button_login_tablet">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="small_text_login_button_tablet">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="title_dialog">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="message_dialog">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="small_text_title_bottom_login_form">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#0079c2</item>
+    </style>
+
+    <style name="title_form">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#0079c2</item>
+    </style>
+
+    <style name="text_size_16_bold">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="small_text_size_12">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="small_text_size_14">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="small_text_title_payment_instruction">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#0079c2</item>
+    </style>
+
+    <style name="style_title_header_form">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="style_title_form">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="style_text_link">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="style_text_link_tablet">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="style_title_form_tablet">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="style_title_edittext">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color_hint</item>
+    </style>
+
+    <style name="style_title_edittext_tablet">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/color_hint</item>
+    </style>
+
+    <style name="style_error_text">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="style_error_text_tablet">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="style_empty_data_text">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="style_empty_data_text_tablet">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="style_text_edittext">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="style_text_edittext_tablet">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="small_text_size_10">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="style_popup">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/color_hint</item>
+    </style>
+
+    <style name="style_popup_tablet">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/color_hint</item>
+    </style>
+
+    <!-- style for expandable listview group-->
+    <style name="style_header_group_expandable_title">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginRight">@dimen/dimen_margin_right_group_title_expandable
+        </item>
+    </style>
+
+    <style name="style_header_group_expandable_content">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="style_header_group_expandable_title_tablet">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginRight">
+            @dimen/dimen_margin_right_group_title_expandable_tablet
+        </item>
+    </style>
+
+    <style name="style_header_group_expandable_content_tablet">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!--style for expandable listview child-->
+
+    <style name="style_header_item_expandable_title">
+        <item name="android:textColor">@color/color_hint</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="style_header_item_expandable_content">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="style_header_item_expandable_title_tablet">
+        <item name="android:textColor">@color/color_hint</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="style_header_item_expandable_content_tablet">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <style name="style_color_total_money_payment">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FF0000</item>
+    </style>
+
+    <style name="style_text_header_page">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="style_text_header_page_tablet">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="style_text_pagination">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="style_text_pagination_tablet">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.NoActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

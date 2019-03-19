@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/style_text_edittext_tablet"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+    android:background="@drawable/rounded_spinner"
+    android:gravity="center"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" />

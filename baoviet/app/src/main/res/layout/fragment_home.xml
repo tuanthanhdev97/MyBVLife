@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rlHomeImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/imgHome"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_height_image_home"
+            android:scaleType="fitXY"
+            android:src="@drawable/image_home" />
+
+        <RelativeLayout
+            android:id="@+id/rlHomeHeader"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/imgHome"
+            android:background="@color/transparent">
+
+            <ImageView
+                android:id="@+id/imgHomeLogoMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/icon_menu" />
+
+            <ImageView
+                android:id="@+id/imgHomeLogoBell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/ic_bell" />
+
+            <TextView
+                android:id="@+id/tvHomeNumberNotify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="18dp"
+                android:text=""
+                android:textColor="@color/blue_dark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgHome"
+            android:background="@drawable/gradient_tab_home">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabLayoutHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:minHeight="?attr/actionBarSize"
+                app:tabMaxWidth="@dimen/dimen_tab_home_max_width"
+                app:tabMinWidth="@dimen/dimen_tab_home_min_width"
+                app:tabMode="fixed" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvHomeTitleTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlHomeImage"
+        android:layout_marginTop="@dimen/dimen_tab_menu_label_margin_top"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvHomeTitleTab"
+        android:padding="20dp">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPagerHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvHomeTypeDevice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_contract_type_phone"
+        android:visibility="gone" />
+
+</RelativeLayout>

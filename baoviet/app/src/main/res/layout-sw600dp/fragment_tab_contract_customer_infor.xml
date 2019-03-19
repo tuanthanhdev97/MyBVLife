@@ -1,0 +1,864 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_content"
+    android:orientation="vertical">
+
+    <!-- infor_title_buyer-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_header_section_tablet"
+        android:background="@drawable/rounded_title_form"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_margin_right_icon_header_section_tablet"
+            android:src="@mipmap/ic_person" />
+
+        <TextView
+            android:id="@+id/tvContractTabTitleCustomerBuyer"
+            style="@style/style_title_form_tablet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/txt_contract_tab_customer_infor_title_buyer" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnContractTabCustomerBuyer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <!-- label_product -->
+            <TextView
+                style="@style/style_title_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                android:layout_weight="1"
+                android:text="@string/txt_contract_tab_customer_infor_buyer_label_name" />
+
+            <EditText
+                android:id="@+id/edtContractTabCustomerName"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_editext"
+                android:editable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lnContractTabCustomerRepresentative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <!-- status -->
+            <TextView
+                style="@style/style_title_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                android:layout_weight="1"
+                android:text="@string/txt_contract_tab_customer_infor_buyer_label_representative" />
+
+            <EditText
+                android:id="@+id/edtContractTabCustomerRepresentative"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_editext"
+                android:editable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <!-- Birthday -->
+
+        <LinearLayout
+            android:id="@+id/lnContractTabCustomerBirthday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                style="@style/style_title_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                android:layout_weight="1"
+                android:text="@string/txt_contract_tab_customer_infor_buyer_label_birthday" />
+
+            <EditText
+                android:id="@+id/edtContractTabCustomerBirthday"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_editext"
+                android:editable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <!-- Gender -->
+        <LinearLayout
+            android:id="@+id/lnContractTabCustomerGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                style="@style/style_title_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                android:layout_weight="1"
+                android:text="@string/txt_contract_tab_customer_infor_buyer_label_gender" />
+
+            <EditText
+                android:id="@+id/edtContractTabCustomerGender"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_editext"
+                android:editable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <!-- label_release_date -->
+            <TextView
+                style="@style/style_title_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                android:layout_weight="1"
+                android:text="@string/txt_contract_tab_customer_infor_buyer_label_mail" />
+
+            <EditText
+                android:id="@+id/edtContractTabCustomerMail"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_editext"
+                android:editable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <!-- label_effective_date -->
+            <TextView
+                style="@style/style_title_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                android:layout_weight="1"
+                android:text="@string/txt_contract_tab_customer_infor_buyer_label_phone" />
+
+            <EditText
+                android:id="@+id/edtContractTabCustomerPhone"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_editext"
+                android:editable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <!-- Home Phone-->
+        <LinearLayout
+            android:id="@+id/lnContractTabCustomerHomePhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <!-- label home phone -->
+            <TextView
+                style="@style/style_title_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                android:layout_weight="1"
+                android:text="@string/txt_contract_tab_customer_infor_buyer_label_home_phone" />
+
+            <EditText
+                android:id="@+id/edtContractTabCustomerHomePhone"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_editext"
+                android:editable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <!-- label phone company -->
+            <TextView
+                style="@style/style_title_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                android:layout_weight="1"
+                android:text="@string/txt_contract_tab_customer_infor_buyer_label_phone_company" />
+
+            <EditText
+                android:id="@+id/edtContractTabCustomerPhoneCompany"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_editext"
+                android:editable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <!-- rate -->
+            <TextView
+                style="@style/style_title_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                android:layout_weight="1"
+                android:text="@string/txt_contract_tab_customer_infor_buyer_label_type_id" />
+
+            <EditText
+                android:id="@+id/edtContractTabCustomerTypeId"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_editext"
+                android:editable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <!-- label_number_id -->
+            <TextView
+                style="@style/style_title_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                android:layout_weight="1"
+                android:text="@string/txt_contract_tab_customer_infor_buyer_label_number" />
+
+            <EditText
+                android:id="@+id/edtContractTabCustomerNumber"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_editext"
+                android:editable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <!-- label_date_id -->
+            <TextView
+                style="@style/style_title_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                android:layout_weight="1"
+                android:text="@string/txt_contract_tab_customer_infor_buyer_label_date_id" />
+
+            <EditText
+                android:id="@+id/edtContractTabCustomerDateId"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_editext"
+                android:editable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <!-- label_address_id -->
+            <TextView
+                style="@style/style_title_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                android:layout_weight="1"
+                android:text="@string/txt_contract_tab_customer_infor_buyer_label_address_id" />
+
+            <EditText
+                android:id="@+id/edtContractTabCustomerAddressId"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_editext"
+                android:editable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <!-- label_tax_code -->
+            <TextView
+                style="@style/style_title_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                android:layout_weight="1"
+                android:text="@string/txt_contract_tab_customer_infor_buyer_label_tax_code" />
+
+            <EditText
+                android:id="@+id/edtContractTabCustomerTaxCode"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_editext"
+                android:editable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <!-- label_address -->
+            <TextView
+                android:id="@+id/tvContractTabCustomerAddress"
+                style="@style/style_title_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                android:layout_weight="1"
+                android:text="@string/txt_contract_tab_customer_infor_buyer_label_address" />
+
+            <EditText
+                android:id="@+id/edtContractTabCustomerAddress"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_editext"
+                android:editable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvContractTabCustomerBuyer"
+        style="@style/style_empty_data_text_tablet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_contract_tab_account_value_error"
+        android:visibility="gone" />
+
+    <!-- title_benefit_insurance -->
+
+    <LinearLayout
+        android:id="@+id/lnContractTabCustomerTitleAssign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_header_section_tablet"
+        android:layout_marginTop="@dimen/dimen_margin_top_header_section_tablet"
+        android:background="@drawable/rounded_title_form"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_margin_right_icon_header_section_tablet"
+            android:src="@mipmap/ic_person" />
+
+        <TextView
+            style="@style/style_title_form_tablet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/txt_contract_tab_customer_infor_title_assign" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnContractTabCustomerAssign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <!-- label_name -->
+            <TextView
+                style="@style/style_title_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                android:layout_weight="1"
+                android:text="@string/txt_contract_tab_customer_infor_assign_label_name" />
+
+            <EditText
+                android:id="@+id/edtContractTabCustomerAssignName"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_editext"
+                android:editable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnContractTabCustomerAssignBirthday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <!-- assign_label_birthday -->
+            <TextView
+                style="@style/style_title_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                android:layout_weight="1"
+                android:text="@string/txt_contract_tab_customer_infor_assign_label_birthday" />
+
+            <EditText
+                android:id="@+id/edtContractTabCustomerAssignBirthday"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_editext"
+                android:editable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lnContractTabCustomerAssignGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <!-- assign_label_gender -->
+            <TextView
+                style="@style/style_title_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                android:layout_weight="1"
+                android:text="@string/txt_contract_tab_customer_infor_assign_label_gender" />
+
+            <EditText
+                android:id="@+id/edtContractTabCustomerAssignGender"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_editext"
+                android:editable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <!-- assign_label_mail -->
+            <TextView
+                style="@style/style_title_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                android:layout_weight="1"
+                android:text="@string/txt_contract_tab_customer_infor_assign_label_mail" />
+
+            <EditText
+                android:id="@+id/edtContractTabCustomerAssignMail"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_editext"
+                android:editable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <!-- assign_label_phone -->
+            <TextView
+                style="@style/style_title_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                android:layout_weight="1"
+                android:text="@string/txt_contract_tab_customer_infor_assign_label_phone" />
+
+            <EditText
+                android:id="@+id/edtContractTabCustomerAssignPhone"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_editext"
+                android:editable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <!-- assign_label_phone_company -->
+            <TextView
+                style="@style/style_title_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                android:layout_weight="1"
+                android:text="@string/txt_contract_tab_customer_infor_assign_label_phone_company" />
+
+            <EditText
+                android:id="@+id/edtContractTabCustomerAssignPhoneCompany"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_editext"
+                android:editable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lnContractTabCustomerAssignHomePhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <!-- assign_label_home_phone -->
+            <TextView
+                style="@style/style_title_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                android:layout_weight="1"
+                android:text="@string/txt_contract_tab_customer_infor_assign_label_home_phone" />
+
+            <EditText
+                android:id="@+id/edtContractTabCustomerAssignHomePhone"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_editext"
+                android:editable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <!-- assign_label_type_id -->
+            <TextView
+                style="@style/style_title_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                android:layout_weight="1"
+                android:text="@string/txt_contract_tab_customer_infor_assign_label_type_id" />
+
+            <EditText
+                android:id="@+id/edtContractTabCustomerAssignTypeId"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_editext"
+                android:editable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <!-- assign_label_number -->
+            <TextView
+                style="@style/style_title_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                android:layout_weight="1"
+                android:text="@string/txt_contract_tab_customer_infor_assign_label_number" />
+
+            <EditText
+                android:id="@+id/edtContractTabCustomerAssignNumber"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_editext"
+                android:editable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <!-- assign_label_date_id -->
+            <TextView
+                style="@style/style_title_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                android:layout_weight="1"
+                android:text="@string/txt_contract_tab_customer_infor_assign_label_date_id" />
+
+            <EditText
+                android:id="@+id/edtContractTabCustomerAssignDateId"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_editext"
+                android:editable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <!-- assign_label_address_id -->
+            <TextView
+                style="@style/style_title_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                android:layout_weight="1"
+                android:text="@string/txt_contract_tab_customer_infor_assign_label_address_id" />
+
+            <EditText
+                android:id="@+id/edtContractTabCustomerAssignAddressId"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_editext"
+                android:editable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <!-- assign_label_tax_code -->
+            <TextView
+                style="@style/style_title_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                android:layout_weight="1"
+                android:text="@string/txt_contract_tab_customer_infor_assign_label_tax_code" />
+
+            <EditText
+                android:id="@+id/edtContractTabCustomerAssignTaxCode"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_editext"
+                android:editable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <!-- assign_label_address -->
+            <TextView
+                android:id="@+id/tvContractTabCustomerAssignAddress"
+                style="@style/style_title_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_title_tablet"
+                android:layout_weight="1"
+                android:text="@string/txt_contract_tab_customer_infor_assign_label_address" />
+
+            <EditText
+                android:id="@+id/edtContractTabCustomerAssignAddress"
+                style="@style/style_text_edittext_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_login_height_edittext_tablet"
+                android:layout_marginBottom="@dimen/dimen_margin_bottom_edittext_tablet"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_editext"
+                android:editable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvContractTabCustomerAssign"
+        style="@style/style_empty_data_text_tablet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_contract_tab_account_value_error"
+        android:visibility="gone" />
+
+    <!-- title_condition_payment -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_margin_bottom_header_section_tablet"
+        android:layout_marginTop="@dimen/dimen_margin_top_header_section_tablet"
+        android:background="@drawable/rounded_title_form"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_margin_right_icon_header_section_tablet"
+            android:src="@mipmap/ic_person" />
+
+        <TextView
+            style="@style/style_title_form_tablet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/txt_contract_tab_customer_infor_title_beneficiary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnContractTabCustomerBeneficiary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ExpandableListView
+            android:id="@+id/exListBeneficiary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|start"
+            android:background="@color/white"
+            android:divider="@color/group_divider_color"
+            android:dividerHeight="@dimen/divider_height"
+            android:groupIndicator="@null"
+            android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvContractTabCustomerBeneficiary"
+        style="@style/style_empty_data_text_tablet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_contract_tab_account_value_error"
+        android:visibility="gone" />
+
+</LinearLayout>
